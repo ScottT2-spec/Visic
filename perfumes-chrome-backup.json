@@ -1,0 +1,1721 @@
+[
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgrh58i0047zsm9d2u36wbq",
+    "pageTitle": "Home",
+    "pageSlug": "/",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191786_a58guenfr",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgrh58i0047zsm9d2u36wbq",
+    "pageTitle": "Home",
+    "pageSlug": "/",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191786_dlea5b186",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgrh58k0048zsm94chb139h",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191782_gdnhy43gl",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgrh58k0048zsm94chb139h",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191782_dc4ehud8w",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwy3003l70m9l24d6gxs",
+    "pageTitle": "Fragrances",
+    "pageSlug": "fragrances",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191778_o4pmuvzdv",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwy3003l70m9l24d6gxs",
+    "pageTitle": "Fragrances",
+    "pageSlug": "fragrances",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191778_kv0wu344y",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwy5003m70m9upkzylxp",
+    "pageTitle": "Journal",
+    "pageSlug": "journal",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191747_bam6bwd5s",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwy5003m70m9upkzylxp",
+    "pageTitle": "Journal",
+    "pageSlug": "journal",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191747_fmnoclts4",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyi003n70m94iuwzubp",
+    "pageTitle": "About Us",
+    "pageSlug": "about-us",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191784_a4nrxk3py",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyi003n70m94iuwzubp",
+    "pageTitle": "About Us",
+    "pageSlug": "about-us",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191784_u9idnov8k",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyl003o70m955cbs40s",
+    "pageTitle": "Contact Us",
+    "pageSlug": "contact-us",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191751_fvhro3i9c",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyl003o70m955cbs40s",
+    "pageTitle": "Contact Us",
+    "pageSlug": "contact-us",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191751_a4e220un6",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyn003p70m9u2qbrd6u",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191749_f9859zabo",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyn003p70m9u2qbrd6u",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191749_ijxm0mtiv",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyp003q70m9gpycqitk",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191780_5ldisiq1b",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyp003q70m9gpycqitk",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191780_unl8hjh1u",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwys003r70m9kl4y1vd5",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191753_fudv1vvu1",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwys003r70m9kl4y1vd5",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191753_z92t7e77r",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyv003s70m9d0y42110",
+    "pageTitle": "Wishlist",
+    "pageSlug": "wishlist",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191766_pfig71f4b",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyv003s70m9d0y42110",
+    "pageTitle": "Wishlist",
+    "pageSlug": "wishlist",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191766_lbb5sa2yl",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyx003t70m9jzzczfl7",
+    "pageTitle": "Cart",
+    "pageSlug": "cart",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191769_l6eqnxagu",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwyx003t70m9jzzczfl7",
+    "pageTitle": "Cart",
+    "pageSlug": "cart",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191769_axqy5o7a5",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz1003u70m9pstj5hzt",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191771_gah35l5d1",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz1003u70m9pstj5hzt",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191771_tz1tgm4b4",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz3003v70m9q0n2zu44",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191774_8uhy0fgvc",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz3003v70m9q0n2zu44",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191774_9nr98lmkt",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz5003w70m94rlo4ylh",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191776_j77c5r7c0",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmr8ox6800012bzm9mq2se0m8",
+    "siteName": "shastrtrdg",
+    "pageId": "cmrgqiwz5003w70m94rlo4ylh",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191776_84nqag4gv",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgrh5di006fzsm98sxqp6e3",
+    "pageTitle": "Home",
+    "pageSlug": "/",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191814_ayhfph7g2",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgrh5di006fzsm98sxqp6e3",
+    "pageTitle": "Home",
+    "pageSlug": "/",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191815_duslkt0uq",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgrh5dl006gzsm955f57mi5",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191817_avvxq15rk",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgrh5dl006gzsm955f57mi5",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191817_u6mbn4n2s",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgleday0000fjm9q7lmulgk",
+    "pageTitle": "Fragrances",
+    "pageSlug": "fragrances",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191792_6yt2gl53q",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgleday0000fjm9q7lmulgk",
+    "pageTitle": "Fragrances",
+    "pageSlug": "fragrances",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191792_7syfizhoq",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledb60001fjm91xtdp3w3",
+    "pageTitle": "Journal",
+    "pageSlug": "journal",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191793_13talrvea",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledb60001fjm91xtdp3w3",
+    "pageTitle": "Journal",
+    "pageSlug": "journal",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191793_3iy2qbfmc",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbd0002fjm9um3ohxoz",
+    "pageTitle": "About Us",
+    "pageSlug": "about-us",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191805_xnm4b4zsz",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbd0002fjm9um3ohxoz",
+    "pageTitle": "About Us",
+    "pageSlug": "about-us",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191805_ehrdx096g",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbj0003fjm9p0hy5fkc",
+    "pageTitle": "Contact Us",
+    "pageSlug": "contact-us",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191809_9t6rjmymy",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbj0003fjm9p0hy5fkc",
+    "pageTitle": "Contact Us",
+    "pageSlug": "contact-us",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191809_gzoqgw6bm",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbo0004fjm95fcc8nqq",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191795_s61qgw92d",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbo0004fjm95fcc8nqq",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191795_v9knwf9gy",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbu0005fjm9kj91jk4a",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191797_k68wxbrcf",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledbu0005fjm9kj91jk4a",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191797_plqulsway",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledby0006fjm94v0k4btx",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191799_2rdhe8evn",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledby0006fjm94v0k4btx",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191799_nj11k3w7o",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledc10007fjm98c65hpi0",
+    "pageTitle": "Wishlist",
+    "pageSlug": "wishlist",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191811_jufx5nhoh",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledc10007fjm98c65hpi0",
+    "pageTitle": "Wishlist",
+    "pageSlug": "wishlist",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191811_6yi8cd9h5",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledc60008fjm9cd1pz77q",
+    "pageTitle": "Cart",
+    "pageSlug": "cart",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191813_46upweftl",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledc60008fjm9cd1pz77q",
+    "pageTitle": "Cart",
+    "pageSlug": "cart",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191813_qsxb7x3ri",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledca0009fjm9ux9oo2m5",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191800_4yj4hxl4r",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledca0009fjm9ux9oo2m5",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191800_4tw0vximt",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledce000afjm9q5iq9dnl",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191807_hjwkrowb2",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledce000afjm9q5iq9dnl",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191807_vhlapd5bd",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledcj000bfjm9yk8cfb5r",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191803_9xf9xg5pv",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrf2x583000062m9oktgskap",
+    "siteName": "gasder",
+    "pageId": "cmrgledcj000bfjm9yk8cfb5r",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191803_erza95mnd",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgrh5ol00bmzsm9dfnqyzgj",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191738_zdv17ur35",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgrh5ol00bmzsm9dfnqyzgj",
+    "pageTitle": "Shop",
+    "pageSlug": "/shop",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191738_j8heh6l8u",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store"
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrg23n0j00895hm9zw1p3q1y",
+    "pageTitle": "About Us",
+    "pageSlug": "about",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191694_51lfwca71",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrg23n0j00895hm9zw1p3q1y",
+    "pageTitle": "About Us",
+    "pageSlug": "about",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191694_3gjg6rhcz",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc8s000shjm9h1b21nuv",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191712_mmisbnsv2",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc8s000shjm9h1b21nuv",
+    "pageTitle": "Reviews",
+    "pageSlug": "reviews",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191712_yn66lvjmb",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc8y000thjm9mcqsxd8n",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191726_fwwf9utdt",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc8y000thjm9mcqsxd8n",
+    "pageTitle": "New In",
+    "pageSlug": "new-in",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191726_seh1qbnvb",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc93000uhjm92b9mly2n",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191724_pf075v7pj",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc93000uhjm92b9mly2n",
+    "pageTitle": "Bestsellers",
+    "pageSlug": "bestseller",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191724_jw4qglnkf",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9i000xhjm90sx1fg92",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191707_8y1775pyx",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9i000xhjm90sx1fg92",
+    "pageTitle": "Compare",
+    "pageSlug": "compare",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191707_m2264ps8t",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9n000yhjm9v39tazh2",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191710_p39ahqw7t",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9n000yhjm9v39tazh2",
+    "pageTitle": "Order Tracking",
+    "pageSlug": "order-tracking",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191710_rylvnz8y6",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9r000zhjm9uw7klc03",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesHeader",
+    "blockId": "blk_1783803191699_yvf6kz51d",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "categories": [
+        {
+          "name": "Étheria",
+          "slug": "etheria"
+        },
+        {
+          "name": "Celeste Aura",
+          "slug": "celeste-aura"
+        },
+        {
+          "name": "Opus Essence",
+          "slug": "opus-essence"
+        },
+        {
+          "name": "Velours Noir",
+          "slug": "velours-noir"
+        },
+        {
+          "name": "Nocturne Essence",
+          "slug": "nocturne-essence"
+        },
+        {
+          "name": "Elysian Bloom",
+          "slug": "elysian-bloom"
+        }
+      ]
+    }
+  },
+  {
+    "siteId": "cmrfzb16500005hm9r5in5yzp",
+    "siteName": "Perfum",
+    "pageId": "cmrgnsc9r000zhjm9uw7klc03",
+    "pageTitle": "Terms",
+    "pageSlug": "terms",
+    "blockType": "perfumesFooter",
+    "blockId": "blk_1783803191699_xoqjfa22y",
+    "props": {
+      "storeName": "Perfume Store",
+      "storeSlug": "perfume-store",
+      "description": "Discover our exquisite collection of artisan perfumes crafted with the finest ingredients from around the world."
+    }
+  }
+]
