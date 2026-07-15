@@ -29,7 +29,7 @@ export default function AdminAnalyticsPage() {
   if (loading) return <div className="p-6 flex items-center justify-center min-h-[50vh]"><Loader2 className="h-8 w-8 animate-spin text-accent-600" /></div>;
   if (!data) return <div className="p-6 text-surface-500">Failed to load analytics.</div>;
 
-  // Compute totals from chart data
+  // Compute totals from chart dat
   const totalSignups = data.totals?.users ?? data.signups.reduce((s, d) => s + d.count, 0);
   const totalStores = data.totals?.sites ?? (data.sites || data.stores).reduce((s: number, d: { count: number }) => s + d.count, 0);
   const totalOrders = data.totals?.orders ?? data.orders.reduce((s, d) => s + d.count, 0);
