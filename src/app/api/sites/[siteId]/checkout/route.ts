@@ -6,6 +6,7 @@ import {
   initializeFlutterwavePayment,
   initializeMonnifyPayment,
   getMonnifyAccessToken,
+  initializeMoolrePaymentLink,
 } from "@/lib/payments";
 import { generateId } from "@/lib/utils";
 
@@ -19,7 +20,7 @@ export async function POST(req: NextRequest, { params }: Params) {
     const body = await req.json();
     const { orderId, provider, callbackUrl } = body as {
       orderId: string;
-      provider: "MONNIFY" | "PAYSTACK" | "FLUTTERWAVE";
+      provider: "MONNIFY" | "PAYSTACK" | "FLUTTERWAVE" | "MOOLRE";
       callbackUrl: string;
     };
 
@@ -41,7 +42,7 @@ export async function POST(req: NextRequest, { params }: Params) {
       return error(`${provider} is not configured for this store`, 400);
     }
 
-    const reference = `afro_${generateId()}_${Date.now()}`;
+    const reference = `visic_${generateId()}_${Date.now()}`;
     const amountNum = Number(order.total);
 
     // Create transaction record
@@ -105,6 +106,27 @@ export async function POST(req: NextRequest, { params }: Params) {
         redirectUrl: callbackUrl || `${req.headers.get("origin")}/checkout/verify`,
       });
       paymentUrl = result.checkoutUrl;
+    } else if (provider === "MOOLRE") {
+      const config = gateway.config as Record<string, string> | null;
+      const apiUser = config?.apiUser;
+      const accountNumber = config?.accountNumber;
+      const baseUrl = config?.baseUrl || "https://api.moolre.com";
+      if (!apiUser || !accountNumber) return error("Moolre API user or account number not configured", 400);
+
+      const result = await initializeMoolrePaymentLink({
+        apiUser,
+        publicKey: gateway.publicKey!,
+        amount: amountNum,
+        email: order.email,
+        reference,
+        callbackUrl: `${req.headers.get("origin")}/api/webhooks/moolre`,
+        redirectUrl: callbackUrl || `${req.headers.get("origin")}/checkout/verify`,
+        currency: order.currency,
+        accountNumber,
+        metadata: { orderId: order.id, orderNumber: order.orderNumber },
+        baseUrl,
+      });
+      paymentUrl = result.authorization_url;
     } else {
       return error("Unsupported payment provider", 400);
     }

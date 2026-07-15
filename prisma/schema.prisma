@@ -1559,6 +1559,7 @@ enum PaymentProvider {
   MONNIFY
   PAYSTACK
   FLUTTERWAVE
+  MOOLRE
   STRIPE
   PAYPAL
 }

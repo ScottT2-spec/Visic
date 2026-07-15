@@ -73,7 +73,7 @@ export async function initializeFlutterwavePayment(params: {
       },
       meta: params.meta,
       customizations: {
-        title: "AfroStore Payment",
+        title: "Visic Payment",
       },
     }),
   });
@@ -138,6 +138,114 @@ export async function initializeMonnifyPayment(params: {
 export function verifyMonnifyWebhook(body: string, signature: string, secret: string): boolean {
   const hash = crypto.createHmac("sha512", secret).update(body).digest("hex");
   return hash === signature;
+}
+
+// ─── MOOLRE ─────────────────────────────────────────────────
+
+export async function initializeMoolrePaymentLink(params: {
+  apiUser: string;
+  publicKey: string;
+  amount: number;
+  email: string;
+  reference: string;
+  callbackUrl: string;
+  redirectUrl: string;
+  currency: string;
+  accountNumber: string;
+  metadata?: Record<string, unknown>;
+  expirationMinutes?: number;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/embed/link`, {
+    method: "POST",
+    headers: {
+      "X-API-USER": params.apiUser,
+      "X-API-PUBKEY": params.publicKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      amount: String(params.amount),
+      email: params.email,
+      externalref: params.reference,
+      callback: params.callbackUrl,
+      redirect: params.redirectUrl,
+      reusable: "0",
+      expiration_time: params.expirationMinutes || 30,
+      currency: params.currency,
+      accountnumber: params.accountNumber,
+      metadata: params.metadata,
+    }),
+  });
+
+  const data = await res.json();
+  if (data.status !== 1) throw new Error(data.message || "Moolre payment link generation failed");
+  return data.data as { authorization_url: string; reference: string };
+}
+
+export async function initializeMoolreUssdPayment(params: {
+  apiUser: string;
+  privateKey: string;
+  channel: string; // "13"=MTN, "6"=Telecel, "7"=AT
+  currency: string;
+  payer: string;
+  amount: number;
+  reference: string;
+  accountNumber: string;
+  description?: string;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/open/transact/payment`, {
+    method: "POST",
+    headers: {
+      "X-API-USER": params.apiUser,
+      "X-API-KEY": params.privateKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      channel: params.channel,
+      currency: params.currency,
+      payer: params.payer,
+      amount: String(params.amount),
+      externalref: params.reference,
+      reference: params.description || "",
+      accountnumber: params.accountNumber,
+    }),
+  });
+
+  const data = await res.json();
+  if (data.status !== 1) throw new Error(data.message || "Moolre USSD payment failed");
+  return { sessionId: data.data as string, code: data.code as string };
+}
+
+export async function verifyMoolrePayment(params: {
+  apiUser: string;
+  publicKey: string;
+  reference: string;
+  accountNumber: string;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/open/transact/status`, {
+    method: "POST",
+    headers: {
+      "X-API-USER": params.apiUser,
+      "X-API-PUBKEY": params.publicKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      idtype: "1",
+      id: params.reference,
+      accountnumber: params.accountNumber,
+    }),
+  });
+
+  const data = await res.json();
+  return data;
 }
 
 // ─── COMMON: Process webhook payment confirmation ───────────

@@ -157,7 +157,7 @@ export const createDeliveryZoneSchema = z.object({
 // ─── PAYMENT GATEWAYS ───────────────────────────────────────
 
 export const setupPaymentGatewaySchema = z.object({
-  provider: z.enum(["MONNIFY", "PAYSTACK", "FLUTTERWAVE"]),
+  provider: z.enum(["MONNIFY", "PAYSTACK", "FLUTTERWAVE", "MOOLRE"]),
   publicKey: z.string().min(1),
   secretKey: z.string().min(1),
   webhookSecret: z.string().optional(),
