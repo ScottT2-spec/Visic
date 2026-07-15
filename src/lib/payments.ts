@@ -248,6 +248,117 @@ export async function verifyMoolrePayment(params: {
   return data;
 }
 
+// ─── MOOLRE DISBURSEMENTS ───────────────────────────────────
+
+export async function moolreValidateName(params: {
+  apiUser: string;
+  apiKey: string;
+  receiver: string;
+  channel: string; // "1"=MTN, "6"=Telecel, "7"=AT, "2"=Bank
+  currency: string;
+  accountNumber: string;
+  sublistId?: string;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/open/transact/validate`, {
+    method: "POST",
+    headers: {
+      "X-API-USER": params.apiUser,
+      "X-API-KEY": params.apiKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      receiver: params.receiver,
+      channel: params.channel,
+      currency: params.currency,
+      accountnumber: params.accountNumber,
+      ...(params.sublistId && { sublistid: params.sublistId }),
+    }),
+  });
+
+  const data = await res.json();
+  if (data.status !== 1) throw new Error(data.message || "Name validation failed");
+  return data.data as string; // Returns the account holder name
+}
+
+export async function moolreTransfer(params: {
+  apiUser: string;
+  privateKey: string;
+  channel: string; // "1"=MTN, "6"=Telecel, "7"=AT, "2"=Bank
+  currency: string;
+  amount: number;
+  receiver: string;
+  reference: string;
+  accountNumber: string;
+  description?: string;
+  sublistId?: string;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/open/transact/transfer`, {
+    method: "POST",
+    headers: {
+      "X-API-USER": params.apiUser,
+      "X-API-KEY": params.privateKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      channel: params.channel,
+      currency: params.currency,
+      amount: String(params.amount),
+      receiver: params.receiver,
+      externalref: params.reference,
+      reference: params.description || "",
+      accountnumber: params.accountNumber,
+      ...(params.sublistId && { sublistid: params.sublistId }),
+    }),
+  });
+
+  const data = await res.json();
+  if (data.status !== 1 && data.status !== "1") throw new Error(data.message || "Transfer failed");
+  return data.data as {
+    txstatus: number;
+    receiver: string;
+    transactionid: string;
+    externalref: string;
+    thirdpartyref: string;
+    receivername: string;
+    amount: string;
+    amountfee: string;
+    fee: string;
+  };
+}
+
+// ─── MOOLRE SMS ─────────────────────────────────────────────
+
+export async function moolreSendSms(params: {
+  vasKey: string;
+  senderId: string;
+  messages: Array<{ recipient: string; message: string; ref?: string }>;
+  baseUrl?: string;
+}) {
+  const base = params.baseUrl || "https://api.moolre.com";
+  const res = await fetch(`${base}/open/sms/send`, {
+    method: "POST",
+    headers: {
+      "X-API-VASKEY": params.vasKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      type: 1,
+      senderid: params.senderId,
+      messages: params.messages,
+    }),
+  });
+
+  const data = await res.json();
+  if (data.status !== 1) throw new Error(data.message || "SMS send failed");
+  return data;
+}
+
 // ─── COMMON: Process webhook payment confirmation ───────────
 
 export async function processPaymentConfirmation(params: {
