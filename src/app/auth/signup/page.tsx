@@ -98,7 +98,7 @@ export default function SignupPage() {
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <Link href="/">
-              <img src="/visic-logo.png" alt="Visic" className="h-16 w-16 object-contain" />
+              <span className="text-xl font-bold tracking-tight">Afrostore</span>
             </Link>
           </div>
 

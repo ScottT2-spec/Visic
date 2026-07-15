@@ -250,7 +250,7 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void } = {}
       {/* Logo */}
       <div className="flex h-16 items-center justify-between px-4 border-b border-gray-100">
         <Link href="/dashboard/workspaces" className="flex items-center min-w-0">
-          <img src="/visic-logo.png" alt="Visic" className={`${collapsed ? "h-16 w-16" : "h-28 w-28"} flex-shrink-0 object-contain`} />
+          <span className={`${collapsed ? "text-lg" : "text-2xl"} font-bold tracking-tight`}>Afrostore</span>
         </Link>
         <button
           onClick={() => setCollapsed(!collapsed)}

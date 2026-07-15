@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface VisicLogoProps {
   size?: number;
   className?: string;
@@ -7,24 +5,22 @@ interface VisicLogoProps {
 
 export default function VisicLogo({ size = 36, className = "" }: VisicLogoProps) {
   return (
-    <Image
-      src="/visic-logo.png"
-      alt="Visic"
-      width={size}
-      height={size}
-      className={`object-contain ${className}`}
-    />
+    <span
+      className={`font-bold tracking-tight select-none ${className}`}
+      style={{ fontSize: size * 0.7, lineHeight: 1 }}
+    >
+      Afrostore
+    </span>
   );
 }
 
 export function VisicLogoIcon({ size = 20, className = "" }: VisicLogoProps) {
   return (
-    <Image
-      src="/visic-logo.png"
-      alt="Visic"
-      width={size}
-      height={size}
-      className={`object-contain ${className}`}
-    />
+    <span
+      className={`font-bold tracking-tight select-none ${className}`}
+      style={{ fontSize: size * 0.7, lineHeight: 1 }}
+    >
+      Afrostore
+    </span>
   );
 }
