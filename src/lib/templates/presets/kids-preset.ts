@@ -117,7 +117,7 @@ export const KIDS_TEMPLATE_PRESET: TemplateBlock[] = [
     type: "kidsInstagram",
     props: {
       sectionTitle: {
-        title: "@Prokip_kids Our instagram",
+        title: "@Visic_kids Our instagram",
       },
       items: [],
     },

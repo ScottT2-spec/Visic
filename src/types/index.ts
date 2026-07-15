@@ -342,15 +342,15 @@ export interface BuilderBlock {
   children?: BuilderBlock[];
 }
 
-// ─── Prokip Sites OS Types ────────────────────────────────────────
-export interface ProkipSite {
+// ─── Visic Sites OS Types ────────────────────────────────────────
+export interface VisicSite {
   id: string;
   workspaceId: string;
   name: string;
   contactWhatsApp?: string;
   businessName?: string;
   logoUrl?: string;
-  theme: ProkipTheme;
+  theme: VisicTheme;
   sections: Section[];
   pages?: Page[];
   activePageId?: string;
@@ -361,7 +361,7 @@ export interface ProkipSite {
   lowDataMode?: boolean;
 }
 
-export interface ProkipTheme {
+export interface VisicTheme {
   id: string;
   name: string;
   designSystem: DesignSystem;

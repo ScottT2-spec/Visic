@@ -433,7 +433,7 @@ export default function NewSitePage() {
                   value={businessInfo.name}
                   onChange={e => setBusinessInfo(prev => ({ ...prev, name: e.target.value }))}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-900 outline-none"
-                  placeholder="e.g. Prokip Technologies"
+                  placeholder="e.g. Visic Technologies"
                 />
               </div>
               <div>
@@ -711,7 +711,7 @@ export default function NewSitePage() {
                 <Globe className="w-8 h-8 text-gray-400" />
                 <div>
                   <p className="font-semibold text-gray-900">Free Subdomain</p>
-                  <p className="text-sm text-gray-500">your-site.prokip.site</p>
+                  <p className="text-sm text-gray-500">your-site.visic.site</p>
                 </div>
               </button>
 

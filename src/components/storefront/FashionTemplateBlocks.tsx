@@ -1265,7 +1265,7 @@ export function FashionFeatures({
 /* ═══════════════════════════════════════════════════════════════
    10. FASHION INSTAGRAM GALLERY
    Grid of images with hover overlay showing likes/comments.
-   Matches WoodMart "PROKIP ON INSTAGRAM" from fashion-colored.
+   Matches WoodMart "VISIC ON INSTAGRAM" from fashion-colored.
    ═══════════════════════════════════════════════════════════════ */
 
 export interface FashionInstaImage {

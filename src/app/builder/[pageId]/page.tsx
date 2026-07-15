@@ -4,7 +4,7 @@ import { useState, useEffect, use } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { api } from "@/lib/api-client";
-import { ProkipSite, DesignSystem, Page, Section } from "@/types";
+import { VisicSite, DesignSystem, Page, Section } from "@/types";
 import BuilderWorkspace from "@/components/builder/BuilderWorkspace";
 import { Loader2 } from "lucide-react";
 import { convertBlocksToSections, convertSectionsToBlocks } from "@/lib/content-converter";
@@ -86,7 +86,7 @@ export default function BuilderPage({ params }: { params: Promise<{ pageId: stri
   const { pageId } = resolvedParams;
   const { user } = useAuth();
   const router = useRouter();
-  const [site, setSite] = useState<ProkipSite | null>(null);
+  const [site, setSite] = useState<VisicSite | null>(null);
   const [siteId, setSiteId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -128,7 +128,7 @@ export default function BuilderPage({ params }: { params: Promise<{ pageId: stri
         if (cancelled) return;
         
         if (siteRes.success && siteRes.data) {
-          // Convert existing pages to ProkipSite format
+          // Convert existing pages to VisicSite format
           const convertedPages = (pagesRes.data?.pages || []).map((page: any) => ({
             id: page.id,
             name: page.title,
@@ -140,8 +140,8 @@ export default function BuilderPage({ params }: { params: Promise<{ pageId: stri
           // Find the current page
           const currentPage = convertedPages.find((p: Page) => p.id === pageId) || convertedPages[0];
           
-          // Convert existing site data to ProkipSite format
-          const siteData: ProkipSite = {
+          // Convert existing site data to VisicSite format
+          const siteData: VisicSite = {
             id: resolvedSiteId,
             workspaceId: siteRes.data.workspaceId || user.id,
             name: siteRes.data.name || "My Site",
@@ -185,7 +185,7 @@ export default function BuilderPage({ params }: { params: Promise<{ pageId: stri
     };
   }, [pageId, user, router]);
 
-  const handleSiteUpdate = (updatedSite: ProkipSite) => {
+  const handleSiteUpdate = (updatedSite: VisicSite) => {
     setSite(updatedSite);
   };
 

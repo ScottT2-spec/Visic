@@ -98,7 +98,7 @@ export default function SignupPage() {
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <Link href="/">
-              <img src="/prokip-logo.png" alt="Prokip" className="h-16 w-16 object-contain" />
+              <img src="/visic-logo.png" alt="Visic" className="h-16 w-16 object-contain" />
             </Link>
           </div>
 

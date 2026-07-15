@@ -1,5 +1,5 @@
 /**
- * Page management types matching AI Studio (Prokip Sites OS) implementation
+ * Page management types matching AI Studio (Visic Sites OS) implementation
  * This provides a simpler, more direct page editing system
  */
 

@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/prokip-logo.png" alt="Prokip" className="h-28 w-28 object-contain" />
+            <img src="/visic-logo.png" alt="Visic" className="h-28 w-28 object-contain" />
           </Link>
 
           {/* Desktop Nav */}

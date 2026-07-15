@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-interface ProkipLogoProps {
+interface VisicLogoProps {
   size?: number;
   className?: string;
 }
 
-export default function ProkipLogo({ size = 36, className = "" }: ProkipLogoProps) {
+export default function VisicLogo({ size = 36, className = "" }: VisicLogoProps) {
   return (
     <Image
-      src="/prokip-logo.png"
-      alt="Prokip"
+      src="/visic-logo.png"
+      alt="Visic"
       width={size}
       height={size}
       className={`object-contain ${className}`}
@@ -17,11 +17,11 @@ export default function ProkipLogo({ size = 36, className = "" }: ProkipLogoProp
   );
 }
 
-export function ProkipLogoIcon({ size = 20, className = "" }: ProkipLogoProps) {
+export function VisicLogoIcon({ size = 20, className = "" }: VisicLogoProps) {
   return (
     <Image
-      src="/prokip-logo.png"
-      alt="Prokip"
+      src="/visic-logo.png"
+      alt="Visic"
       width={size}
       height={size}
       className={`object-contain ${className}`}

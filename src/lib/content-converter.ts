@@ -2,7 +2,7 @@ import type { Section } from "@/types";
 import type { BuilderBlock } from "@/components/storefront/BlockRenderer";
 
 /**
- * Converts old BuilderBlock format to new Section format for the ProkipSite builder
+ * Converts old BuilderBlock format to new Section format for the VisicSite builder
  * This bridges the gap between existing page content and the new TemplateRenderer
  */
 export function convertBlocksToSections(blocks: BuilderBlock[]): Section[] {

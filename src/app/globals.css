@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Navy — Prokip P3 brand palette */
+  /* Navy — Visic P3 brand palette */
   --color-brand-50: #f0f4fa;
   --color-brand-100: #dce4f0;
   --color-brand-200: #b8c9e0;
@@ -14,7 +14,7 @@
   --color-brand-900: #0a1525;
   --color-brand-950: #060d18;
 
-  /* Gold — Prokip P3 accent palette */
+  /* Gold — Visic P3 accent palette */
   --color-accent-50: #fef9eb;
   --color-accent-100: #FEF3C7;
   --color-accent-200: #fde68a;

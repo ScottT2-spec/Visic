@@ -17,7 +17,7 @@ export function seedKidsPageSections(): KidsSection[] {
 
 /**
  * Default page configurations for Kids template
- * Following the Prokip ensurePagesExist pattern
+ * Following the Visic ensurePagesExist pattern
  */
 export const KIDS_DEFAULT_PAGES = {
   home: {

@@ -14,7 +14,7 @@ import {
   PerfumesCollectionBanners,
 } from './PerfumesTemplateBlocks';
 
-// Section type matching the Prokip reference
+// Section type matching the Visic reference
 export interface PerfumesSection {
   id: string;
   type: string;

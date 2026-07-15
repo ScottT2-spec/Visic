@@ -18,7 +18,7 @@ export function seedTShirtsPrintsPageSections(blocks: TemplateBlock[]): any[] {
 
 /**
  * Default page configurations for T-Shirts & Prints template
- * Following the Prokip ensurePagesExist pattern
+ * Following the Visic ensurePagesExist pattern
  */
 export const TSHIRTS_PRINTS_DEFAULT_PAGES = {
   home: {

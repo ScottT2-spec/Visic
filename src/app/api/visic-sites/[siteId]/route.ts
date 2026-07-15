@@ -1,11 +1,11 @@
 import { NextRequest } from "next/server";
 import { prisma } from "@/lib/db";
 import { success, error } from "@/lib/api-helpers";
-import { ProkipSite } from "@/types";
+import { VisicSite } from "@/types";
 
 type Params = { params: Promise<{ siteId: string }> };
 
-// GET /api/prokip-sites/:siteId
+// GET /api/visic-sites/:siteId
 export async function GET(req: NextRequest, { params }: Params) {
   const { siteId } = await params;
   
@@ -28,8 +28,8 @@ export async function GET(req: NextRequest, { params }: Params) {
       where: { siteId },
     });
 
-    // Convert to ProkipSite format
-    const prokipSite: ProkipSite = {
+    // Convert to VisicSite format
+    const visicSite: VisicSite = {
       id: site.id,
       workspaceId: site.workspaceId,
       name: site.name,
@@ -79,37 +79,37 @@ export async function GET(req: NextRequest, { params }: Params) {
     });
 
     if (pages.length > 0) {
-      prokipSite.pages = pages.map((page) => ({
+      visicSite.pages = pages.map((page) => ({
         id: page.id,
         name: page.title,
         slug: page.slug,
         sections: [],
         isSystem: page.type === "HOME",
       }));
-      prokipSite.activePageId = pages[0].id;
+      visicSite.activePageId = pages[0].id;
     }
 
-    return success(prokipSite);
+    return success(visicSite);
   } catch (err) {
-    console.error("Failed to load ProkipSite:", err);
+    console.error("Failed to load VisicSite:", err);
     return error("Failed to load site", 500);
   }
 }
 
-// PUT /api/prokip-sites/:siteId
+// PUT /api/visic-sites/:siteId
 export async function PUT(req: NextRequest, { params }: Params) {
   const { siteId } = await params;
   
   try {
     const body = await req.json();
-    const prokipSite: ProkipSite = body;
+    const visicSite: VisicSite = body;
 
     // Update site basic info
     await prisma.site.update({
       where: { id: siteId },
       data: {
-        name: prokipSite.name,
-        logo: prokipSite.logoUrl,
+        name: visicSite.name,
+        logo: visicSite.logoUrl,
       },
     });
 
@@ -122,19 +122,19 @@ export async function PUT(req: NextRequest, { params }: Params) {
       await prisma.siteTheme.update({
         where: { id: theme.id },
         data: {
-          primaryColor: prokipSite.theme.designSystem.colors.primary,
-          secondaryColor: prokipSite.theme.designSystem.colors.secondary,
-          fontFamily: prokipSite.theme.designSystem.fonts.heading,
+          primaryColor: visicSite.theme.designSystem.colors.primary,
+          secondaryColor: visicSite.theme.designSystem.colors.secondary,
+          fontFamily: visicSite.theme.designSystem.fonts.heading,
         },
       });
     } else {
       await prisma.siteTheme.create({
         data: {
           siteId,
-          name: prokipSite.theme.name,
-          primaryColor: prokipSite.theme.designSystem.colors.primary,
-          secondaryColor: prokipSite.theme.designSystem.colors.secondary,
-          fontFamily: prokipSite.theme.designSystem.fonts.heading,
+          name: visicSite.theme.name,
+          primaryColor: visicSite.theme.designSystem.colors.primary,
+          secondaryColor: visicSite.theme.designSystem.colors.secondary,
+          fontFamily: visicSite.theme.designSystem.fonts.heading,
           layout: "modern",
         },
       });
@@ -145,7 +145,7 @@ export async function PUT(req: NextRequest, { params }: Params) {
       await prisma.siteSettings.update({
         where: { siteId },
         data: {
-          lowDataMode: prokipSite.lowDataMode,
+          lowDataMode: visicSite.lowDataMode,
         },
       });
     } catch (settingsErr) {
@@ -158,7 +158,7 @@ export async function PUT(req: NextRequest, { params }: Params) {
       await prisma.siteSocialLinks.update({
         where: { siteId },
         data: {
-          whatsapp: prokipSite.contactWhatsApp,
+          whatsapp: visicSite.contactWhatsApp,
         },
       });
     } catch (socialErr) {
@@ -168,18 +168,18 @@ export async function PUT(req: NextRequest, { params }: Params) {
 
     return success({ updated: true });
   } catch (err) {
-    console.error("Failed to update ProkipSite:", err);
+    console.error("Failed to update VisicSite:", err);
     return error("Failed to update site", 500);
   }
 }
 
-// POST /api/prokip-sites/:siteId (Create new ProkipSite)
+// POST /api/visic-sites/:siteId (Create new VisicSite)
 export async function POST(req: NextRequest, { params }: Params) {
   const { siteId } = await params;
   
   try {
     const body = await req.json();
-    const prokipSite: ProkipSite = body;
+    const visicSite: VisicSite = body;
 
     // Check if site exists
     const existingSite = await prisma.site.findUnique({
@@ -191,8 +191,8 @@ export async function POST(req: NextRequest, { params }: Params) {
       await prisma.site.update({
         where: { id: siteId },
         data: {
-          name: prokipSite.name,
-          logo: prokipSite.logoUrl,
+          name: visicSite.name,
+          logo: visicSite.logoUrl,
         },
       });
     } else {
@@ -200,13 +200,13 @@ export async function POST(req: NextRequest, { params }: Params) {
       await prisma.site.create({
         data: {
           id: siteId,
-          workspaceId: prokipSite.workspaceId,
-          name: prokipSite.name,
-          slug: prokipSite.name.toLowerCase().replace(/\s+/g, "-"),
+          workspaceId: visicSite.workspaceId,
+          name: visicSite.name,
+          slug: visicSite.name.toLowerCase().replace(/\s+/g, "-"),
           description: "",
-          logo: prokipSite.logoUrl,
+          logo: visicSite.logoUrl,
           siteType: "ECOMMERCE",
-          subdomain: prokipSite.name.toLowerCase().replace(/\s+/g, "-"),
+          subdomain: visicSite.name.toLowerCase().replace(/\s+/g, "-"),
           currency: "NGN",
           country: "NG",
           businessType: "retail",
@@ -224,28 +224,28 @@ export async function POST(req: NextRequest, { params }: Params) {
       await prisma.siteTheme.update({
         where: { id: existingTheme.id },
         data: {
-          name: prokipSite.theme.name,
-          primaryColor: prokipSite.theme.designSystem.colors.primary,
-          secondaryColor: prokipSite.theme.designSystem.colors.secondary,
-          fontFamily: prokipSite.theme.designSystem.fonts.heading,
+          name: visicSite.theme.name,
+          primaryColor: visicSite.theme.designSystem.colors.primary,
+          secondaryColor: visicSite.theme.designSystem.colors.secondary,
+          fontFamily: visicSite.theme.designSystem.fonts.heading,
         },
       });
     } else {
       await prisma.siteTheme.create({
         data: {
           siteId,
-          name: prokipSite.theme.name,
-          primaryColor: prokipSite.theme.designSystem.colors.primary,
-          secondaryColor: prokipSite.theme.designSystem.colors.secondary,
-          fontFamily: prokipSite.theme.designSystem.fonts.heading,
+          name: visicSite.theme.name,
+          primaryColor: visicSite.theme.designSystem.colors.primary,
+          secondaryColor: visicSite.theme.designSystem.colors.secondary,
+          fontFamily: visicSite.theme.designSystem.fonts.heading,
           layout: "modern",
         },
       });
     }
 
     // Create default pages if they don't exist
-    if (prokipSite.pages) {
-      for (const page of prokipSite.pages) {
+    if (visicSite.pages) {
+      for (const page of visicSite.pages) {
         const existingPage = await prisma.page.findUnique({
           where: { id: page.id },
         });
@@ -268,7 +268,7 @@ export async function POST(req: NextRequest, { params }: Params) {
 
     return success({ created: true });
   } catch (err) {
-    console.error("Failed to create ProkipSite:", err);
+    console.error("Failed to create VisicSite:", err);
     return error("Failed to create site", 500);
   }
 }

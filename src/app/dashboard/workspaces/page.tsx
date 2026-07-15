@@ -392,7 +392,7 @@ export default function WorkspacesPage() {
                           </div>
                           <div className="min-w-0">
                             <p className="font-medium text-gray-900 text-sm truncate">{site.name}</p>
-                            <p className="text-xs text-gray-400 truncate">{site.subdomain}.prokip.site</p>
+                            <p className="text-xs text-gray-400 truncate">{site.subdomain}.visic.site</p>
                           </div>
                         </button>
 

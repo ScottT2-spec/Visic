@@ -17,7 +17,7 @@ export function seedFashionPageSections(): FashionSection[] {
 
 /**
  * Default page configurations for Fashion template
- * Following the Prokip ensurePagesExist pattern
+ * Following the Visic ensurePagesExist pattern
  */
 export const FASHION_DEFAULT_PAGES = {
   home: {

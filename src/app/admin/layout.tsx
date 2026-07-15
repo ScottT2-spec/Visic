@@ -60,7 +60,7 @@ export default function AdminLayout({
 
       {/* Mobile top bar — minimal, just logo */}
       <div className="sticky top-0 z-30 flex h-12 items-center gap-2 border-b border-surface-200 bg-white px-4 lg:hidden">
-        <img src="/prokip-logo.png" alt="Prokip" className="h-30 w-30 object-contain" />
+        <img src="/visic-logo.png" alt="Visic" className="h-30 w-30 object-contain" />
       </div>
 
       {/* Mobile overlay */}

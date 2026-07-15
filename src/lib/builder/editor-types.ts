@@ -1,4 +1,4 @@
-// ─── EDITOR TYPES FOR PROKIP-STYLE DRAG DROP EDITOR ─────────────────
+// ─── EDITOR TYPES FOR VISIC-STYLE DRAG DROP EDITOR ─────────────────
 
 export interface FontStyle {
   fontFamily: string;
@@ -22,7 +22,7 @@ export interface TypographySystem {
   menu: FontStyle;
 }
 
-export interface ProkipTheme {
+export interface VisicTheme {
   id: string;
   name: string;
   category: string;
@@ -177,7 +177,7 @@ export interface Site {
   contactWhatsApp: string;
   status: 'draft' | 'published';
   createdAt: string;
-  theme: ProkipTheme;
+  theme: VisicTheme;
   sections: Section[];
   pages?: Page[];
   activePageId?: string;

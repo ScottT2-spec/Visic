@@ -13,7 +13,7 @@ import {
   FashionNewsletter,
 } from './FashionTemplateBlocks';
 
-// Section type matching the Prokip reference
+// Section type matching the Visic reference
 export interface FashionSection {
   id: string;
   type: string;

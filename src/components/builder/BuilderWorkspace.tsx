@@ -5,15 +5,15 @@ import {
   ArrowLeft, Undo2, Redo2, Save, Eye, EyeOff, Monitor, Tablet, Smartphone,
   LayoutGrid, Sparkles, Loader2, Check
 } from "lucide-react";
-import { ProkipSite, DesignSystem, Page, Section, SectionStyleOverrides } from "@/types";
+import { VisicSite, DesignSystem, Page, Section, SectionStyleOverrides } from "@/types";
 import ThemeProvider from "./ThemeProvider";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 import MediaLibrary from "./MediaLibrary";
 
 interface BuilderWorkspaceProps {
-  site: ProkipSite;
-  onSiteUpdate: (site: ProkipSite) => void;
+  site: VisicSite;
+  onSiteUpdate: (site: VisicSite) => void;
   onSave: () => Promise<void>;
   onBack: () => void;
 }
@@ -32,8 +32,8 @@ export default function BuilderWorkspace({
   const [mediaTargetCallback, setMediaTargetCallback] = useState<((url: string) => void) | null>(null);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
-  const [undoStack, setUndoStack] = useState<ProkipSite[]>([]);
-  const [redoStack, setRedoStack] = useState<ProkipSite[]>([]);
+  const [undoStack, setUndoStack] = useState<VisicSite[]>([]);
+  const [redoStack, setRedoStack] = useState<VisicSite[]>([]);
   const [copiedStyles, setCopiedStyles] = useState<SectionStyleOverrides | null>(null);
   const [iframeReady, setIframeReady] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
