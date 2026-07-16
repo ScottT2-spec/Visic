@@ -128,7 +128,7 @@ export default function MarketplacePage() {
                       <span className="flex items-center gap-0.5"><Download className="h-3 w-3" /> {item.downloads}</span>
                       <span className="flex items-center gap-0.5"><Star className="h-3 w-3" /> {parseFloat(item.rating).toFixed(1)}</span>
                     </div>
-                    {parseFloat(item.price) > 0 && <span className="text-sm font-bold text-brand-600">₦{parseFloat(item.price).toLocaleString()}</span>}
+                    {parseFloat(item.price) > 0 && <span className="text-sm font-bold text-brand-600">GH₵{parseFloat(item.price).toLocaleString()}</span>}
                   </div>
                 </div>
               </div>

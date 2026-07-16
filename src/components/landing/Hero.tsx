@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const trustedBy = [
   "5,000+ African businesses",
-  "₦2B+ processed",
+  "GH₵2B+ processed",
   "15 countries",
 ];
 
@@ -177,7 +177,7 @@ export default function Hero() {
                       {/* Stats */}
                       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
                         {[
-                          { label: "Revenue", value: "₦2.4M", change: "+24%" },
+                          { label: "Revenue", value: "GH₵2.4M", change: "+24%" },
                           { label: "Orders", value: "186", change: "+12%" },
                           { label: "Customers", value: "1,249", change: "+8%" },
                           {
@@ -253,7 +253,7 @@ export default function Hero() {
                         New Order!
                       </div>
                       <div className="text-[10px] text-surface-500">
-                        ₦45,000 • 2 items
+                        GH₵45,000 • 2 items
                       </div>
                     </div>
                   </div>

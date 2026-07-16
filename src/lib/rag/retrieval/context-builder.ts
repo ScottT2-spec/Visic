@@ -219,7 +219,7 @@ export class ContextBuilder {
 
     switch (result.documentType) {
       case 'product':
-        if (meta.price) parts.push(`${meta.currency || 'NGN'} ${meta.price}`);
+        if (meta.price) parts.push(`${meta.currency || 'GHS'} ${meta.price}`);
         if (meta.stock !== undefined) parts.push(`Stock: ${meta.stock}`);
         if (meta.category) parts.push(`Cat: ${meta.category}`);
         if (meta.status) parts.push(`Status: ${meta.status}`);
@@ -227,7 +227,7 @@ export class ContextBuilder {
 
       case 'order':
         if (meta.orderNumber) parts.push(`#${meta.orderNumber}`);
-        if (meta.total) parts.push(`${meta.currency || 'NGN'} ${meta.total}`);
+        if (meta.total) parts.push(`${meta.currency || 'GHS'} ${meta.total}`);
         if (meta.status) parts.push(`Status: ${meta.status}`);
         if (meta.paymentStatus) parts.push(`Payment: ${meta.paymentStatus}`);
         break;
@@ -235,7 +235,7 @@ export class ContextBuilder {
       case 'customer':
         if (meta.email) parts.push(String(meta.email));
         if (meta.totalOrders) parts.push(`Orders: ${meta.totalOrders}`);
-        if (meta.totalSpent) parts.push(`Spent: ${meta.currency || 'NGN'} ${meta.totalSpent}`);
+        if (meta.totalSpent) parts.push(`Spent: ${meta.currency || 'GHS'} ${meta.totalSpent}`);
         break;
 
       case 'review':

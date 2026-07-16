@@ -8,19 +8,19 @@ import Link from "next/link";
 const DESKTOP_PRODUCTS = [
   {
     name: "Ankara Wrap Dress",
-    price: "₦18,500",
+    price: "GH₵18,500",
     badge: "Best Seller",
     image: "https://images.unsplash.com/photo-1590735213920-68192a487bc2?w=200&h=200&fit=crop",
   },
   {
     name: "Beaded Necklace Set",
-    price: "₦12,000",
+    price: "GH₵12,000",
     badge: null,
     image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=200&h=200&fit=crop",
   },
   {
     name: "Silk Head Wrap",
-    price: "₦8,500",
+    price: "GH₵8,500",
     badge: "New",
     image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop",
   },
@@ -71,7 +71,7 @@ function DesktopMockup() {
           <div className="relative bg-gradient-to-r from-purple-900 via-purple-800 to-pink-800 px-6 py-8">
             <span className="inline-block text-[9px] font-semibold text-pink-300 bg-pink-500/20 rounded-full px-2.5 py-0.5 mb-2">✨ New Collection</span>
             <h2 className="text-lg font-bold text-white leading-tight">Summer Elegance<br />Collection 2026</h2>
-            <p className="text-[10px] text-purple-200 mt-1.5 max-w-[200px]">Handcrafted African fashion meets modern style. Free delivery in Lagos.</p>
+            <p className="text-[10px] text-purple-200 mt-1.5 max-w-[200px]">Handcrafted African fashion meets modern style. Free delivery in Accra.</p>
             <button className="mt-3 bg-white text-purple-900 text-[10px] font-bold rounded-lg px-4 py-1.5 flex items-center gap-1">
               Shop Now <ArrowRight className="h-3 w-3" />
             </button>
@@ -156,7 +156,7 @@ function PhoneMockup() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-[8px] text-brand-200">Today&apos;s Revenue</p>
-                  <p className="text-base font-extrabold text-white">₦485,200</p>
+                  <p className="text-base font-extrabold text-white">GH₵485,200</p>
                 </div>
                 <div className="flex items-center gap-1 bg-green-500/20 rounded-full px-2 py-0.5">
                   <TrendingUp className="h-2.5 w-2.5 text-green-300" />
@@ -206,9 +206,9 @@ function PhoneMockup() {
               <span className="text-[8px] text-brand-600 font-semibold">See all</span>
             </div>
             {[
-              { name: "Chioma A.", amount: "₦32,500", status: "Delivered", statusColor: "bg-green-100 text-green-700", time: "2h ago" },
-              { name: "Emeka O.", amount: "₦18,000", status: "Processing", statusColor: "bg-blue-100 text-blue-700", time: "4h ago" },
-              { name: "Fatima B.", amount: "₦45,800", status: "Pending", statusColor: "bg-amber-100 text-amber-700", time: "5h ago" },
+              { name: "Chioma A.", amount: "GH₵32,500", status: "Delivered", statusColor: "bg-green-100 text-green-700", time: "2h ago" },
+              { name: "Emeka O.", amount: "GH₵18,000", status: "Processing", statusColor: "bg-blue-100 text-blue-700", time: "4h ago" },
+              { name: "Fatima B.", amount: "GH₵45,800", status: "Pending", statusColor: "bg-amber-100 text-amber-700", time: "5h ago" },
             ].map((order, i) => (
               <div key={i} className="flex items-center justify-between py-1.5 border-b border-surface-50 last:border-0">
                 <div className="flex items-center gap-2">

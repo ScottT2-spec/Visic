@@ -11,7 +11,7 @@ import { ArrowRight, Clock3, Star } from "lucide-react";
    ═══════════════════════════════════════════════════════════════ */
 
 function formatPrice(amount: number, currency: string) {
-  const symbolMap: Record<string, string> = { USD: "$", NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", GBP: "£", EUR: "€" };
+  const symbolMap: Record<string, string> = { USD: "$", GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", GBP: "£", EUR: "€" };
   return `${symbolMap[currency] || currency}${amount.toFixed(0)}`;
 }
 

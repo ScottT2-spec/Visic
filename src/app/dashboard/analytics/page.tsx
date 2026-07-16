@@ -25,7 +25,7 @@ interface AnalyticsData {
 export default function AnalyticsPage() {
   const { currentStore } = useSite();
   const { data, loading } = useSiteApi<AnalyticsData>("/analytics?period=30d");
-  const currency = currentStore?.currency || "NGN";
+  const currency = currentStore?.currency || "GHS";
 
   const summary = data?.summary;
 

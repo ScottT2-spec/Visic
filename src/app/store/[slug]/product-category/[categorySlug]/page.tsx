@@ -8,8 +8,8 @@ type Props = {
   params: Promise<{ slug: string; categorySlug: string }>;
 };
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
@@ -62,7 +62,7 @@ export default async function ProductCategoryPage({ params }: Props) {
   ]);
 
   const categoryName = category?.name || "Gifts";
-  const currency = site.currency || "NGN";
+  const currency = site.currency || "GHS";
   const giftLinks = [
     { label: "All Products", href: `/store/${slug}/shop` },
     { label: "Gifts", href: `/store/${slug}/product-category/gifts` },

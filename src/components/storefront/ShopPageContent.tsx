@@ -87,8 +87,8 @@ interface ShopPageContentProps {
 
 /* ───────── Helpers ───────── */
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
@@ -139,7 +139,7 @@ export function ShopPageContent({
   onWishlistClick,
 }: ShopPageContentProps) {
   const { store } = storeData;
-  const currency = store.currency || "NGN";
+  const currency = store.currency || "GHS";
   
   const [products, setProducts] = useState<Product[]>(storeData.products || []);
   const [loading, setLoading] = useState(false);

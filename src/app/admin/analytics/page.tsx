@@ -39,7 +39,7 @@ export default function AdminAnalyticsPage() {
     { label: "Total Users", value: totalSignups.toLocaleString(), icon: Users, color: "bg-blue-50 text-blue-600" },
     { label: "Total Stores", value: totalStores.toLocaleString(), icon: Store, color: "bg-purple-50 text-purple-600" },
     { label: "Total Orders", value: totalOrders.toLocaleString(), icon: ShoppingCart, color: "bg-green-50 text-green-600" },
-    { label: "Total Revenue", value: `₦${totalRevenue.toLocaleString()}`, icon: DollarSign, color: "bg-amber-50 text-amber-600" },
+    { label: "Total Revenue", value: `GH₵${totalRevenue.toLocaleString()}`, icon: DollarSign, color: "bg-amber-50 text-amber-600" },
   ];
 
   const charts: { title: string; subtitle: string; data: Record<string, string | number>[]; dataKey: string; label: string; format?: (v: number) => string }[] = [

@@ -42,13 +42,13 @@ const listDeliveryZones: MCPToolDef = {
 const createDeliveryZone: MCPToolDef = {
   name: "create_delivery_zone",
   description: `Create a delivery zone. Before calling, ask:
-- Zone name (e.g., "Lagos Island", "Within Lagos", "Nationwide")
+- Zone name (e.g., "East Legon", "Within Accra", "Nationwide")
 - Areas covered (list of areas/cities/states)
 - Delivery fee
 - Free shipping threshold (optional)
 - Estimated delivery time
 
-Suggest zones based on the store's country (e.g., for Nigeria: Lagos Mainland, Lagos Island, Southwest, Nationwide).`,
+Suggest zones based on the store's country (e.g., for Ghana: Accra Central, East Legon, Southwest, Nationwide).`,
   category: "delivery",
   parameters: {
     type: "object",

@@ -308,7 +308,7 @@ Make it conversational — suggest good names if they're stuck, help them articu
       description: { type: "string", description: "Store description" },
       business_type: { type: "string", description: "Business type (fashion, electronics, food, beauty, general, etc.)" },
       country: { type: "string", description: "Country code (e.g., NG, GH, KE)" },
-      currency: { type: "string", description: "Currency code (e.g., NGN, GHS, KES)" },
+      currency: { type: "string", description: "Currency code (e.g., GHS, KES)" },
     },
     required: ["name"],
   },
@@ -324,7 +324,7 @@ Make it conversational — suggest good names if they're stuck, help them articu
         description: params.description || "",
         businessType: params.business_type || "general",
         country: params.country || "NG",
-        currency: params.currency || "NGN",
+        currency: params.currency || "GHS",
         _action: "create",
       },
     };

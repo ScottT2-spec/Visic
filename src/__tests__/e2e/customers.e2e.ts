@@ -173,9 +173,9 @@ export function customerAndCatalogTests() {
       store = await createTestStore(user.token);
     });
 
-    it('should create delivery zone for Lagos Mainland', async () => {
+    it('should create delivery zone for Accra Central', async () => {
       const res = await POST(`/api/sites/${store.id}/delivery-zones`, {
-        name: 'Lagos Mainland',
+        name: 'Accra Central',
         areas: ['Yaba', 'Surulere', 'Ikeja', 'Mushin', 'Oshodi'],
         fee: 2000,
         freeAbove: 50000,
@@ -185,9 +185,9 @@ export function customerAndCatalogTests() {
       expectSuccess(res, 201);
     });
 
-    it('should create delivery zone for Lagos Island', async () => {
+    it('should create delivery zone for East Legon', async () => {
       const res = await POST(`/api/sites/${store.id}/delivery-zones`, {
-        name: 'Lagos Island',
+        name: 'East Legon',
         areas: ['Victoria Island', 'Lekki', 'Ikoyi', 'Ajah'],
         fee: 3500,
         freeAbove: 75000,
@@ -262,7 +262,7 @@ export function customerAndCatalogTests() {
       const res = await POST(`/api/sites/${store.id}/pages`, {
         title: 'About Us',
         type: 'ABOUT',
-        content: { blocks: [{ type: 'text', text: 'We are a Lagos-based fashion brand.' }] },
+        content: { blocks: [{ type: 'text', text: 'We are a Accra-based fashion brand.' }] },
         isPublished: true,
       }, user.token);
 

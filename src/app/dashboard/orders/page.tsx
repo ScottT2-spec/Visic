@@ -79,7 +79,7 @@ export default function OrdersPage() {
     }
   };
 
-  const currency = currentStore?.currency || "NGN";
+  const currency = currentStore?.currency || "GHS";
 
   return (
     <>

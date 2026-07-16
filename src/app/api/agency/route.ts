@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
         data: {
           workspaceId: workspace.id, name: siteName, slug: `${siteSlug}-${uniqueSuffix}`,
           subdomain: `${siteSlug}-${uniqueSuffix}`,
-          siteType: siteType || "ECOMMERCE", currency: "NGN",
+          siteType: siteType || "ECOMMERCE", currency: "GHS",
         },
       });
     }

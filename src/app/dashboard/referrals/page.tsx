@@ -146,8 +146,8 @@ export default function ReferralsPage() {
     setTimeout(() => setCopiedCode(null), 2000);
   };
 
-  const currency = currentStore?.currency || "NGN";
-  const symbol = currency === "NGN" ? "₦" : currency === "GHS" ? "₵" : currency;
+  const currency = currentStore?.currency || "GHS";
+  const symbol = currency === "GHS" ? "GH₵" : currency === "GHS" ? "₵" : currency;
 
   if (loading) {
     return (

@@ -38,8 +38,8 @@ export function orderTests() {
         deliveryAddress: {
           line1: '15 Admiralty Way',
           city: 'Lekki',
-          state: 'Lagos',
-          country: 'Nigeria',
+          state: 'Accra',
+          country: 'Ghana',
         },
         paymentMethod: 'bank_transfer',
       }, user.token);
@@ -59,9 +59,9 @@ export function orderTests() {
         items: [],
         deliveryAddress: {
           line1: '1 Test St',
-          city: 'Lagos',
-          state: 'Lagos',
-          country: 'Nigeria',
+          city: 'Accra',
+          state: 'Accra',
+          country: 'Ghana',
         },
         paymentMethod: 'card',
       }, user.token);
@@ -77,9 +77,9 @@ export function orderTests() {
         items: [{ productId: 'nonexistent_id', quantity: 1 }],
         deliveryAddress: {
           line1: '1 Test St',
-          city: 'Lagos',
-          state: 'Lagos',
-          country: 'Nigeria',
+          city: 'Accra',
+          state: 'Accra',
+          country: 'Ghana',
         },
         paymentMethod: 'card',
       }, user.token);

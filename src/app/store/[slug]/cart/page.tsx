@@ -22,8 +22,8 @@ interface CartItem {
   product: CartProduct;
 }
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   return `${symbols[currency] || currency}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
 
@@ -59,7 +59,7 @@ export default function CartPage() {
 
   const clearCart = useCallback(() => setCart([]), []);
 
-  const currency = cart[0]?.product?.currency || "NGN";
+  const currency = cart[0]?.product?.currency || "GHS";
   const subtotal = cart.reduce((s, i) => s + i.product.price * i.quantity, 0);
   const totalItems = cart.reduce((s, i) => s + i.quantity, 0);
 

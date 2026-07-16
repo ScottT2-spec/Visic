@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "online store",
     "AI",
     "website builder",
-    "Nigeria",
+    "Ghana",
     "Paystack",
     "Flutterwave",
     "Monnify",

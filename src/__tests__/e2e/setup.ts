@@ -182,7 +182,7 @@ export async function createTestStore(
     name,
     description: overrides.description || 'E2E test store',
     businessType: overrides.businessType || 'general',
-    currency: overrides.currency || 'NGN',
+    currency: overrides.currency || 'GHS',
     country: overrides.country || 'NG',
   }, token);
 
@@ -289,9 +289,9 @@ export async function createTestOrder(
     items: [{ productId, quantity: overrides.quantity || 1 }],
     deliveryAddress: {
       line1: '123 Test Street',
-      city: 'Lagos',
-      state: 'Lagos',
-      country: 'Nigeria',
+      city: 'Accra',
+      state: 'Accra',
+      country: 'Ghana',
     },
     paymentMethod: overrides.paymentMethod || 'bank_transfer',
   }, token);

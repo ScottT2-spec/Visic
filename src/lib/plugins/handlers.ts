@@ -107,7 +107,7 @@ registerHandler("validate_min_order", (ctx) => {
   const min = (ctx.pluginSettings.minOrderAmount as number) || 0;
   const total = (ctx.data.cartTotal as number) || 0;
   const currency = ctx.store.currency;
-  const symbol = currency === "NGN" ? "₦" : currency === "GHS" ? "₵" : currency;
+  const symbol = currency === "GHS" ? "GH₵" : currency === "GHS" ? "₵" : currency;
 
   if (min > 0 && total < min) {
     return { errors: [`Minimum order amount is ${symbol}${min.toLocaleString()}. Your cart total is ${symbol}${total.toLocaleString()}.`] };

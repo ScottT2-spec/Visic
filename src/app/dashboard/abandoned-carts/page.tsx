@@ -24,8 +24,8 @@ export default function AbandonedCartsPage() {
   const [loading, setLoading] = useState(true);
   const [expandedCart, setExpandedCart] = useState<string | null>(null);
 
-  const currency = currentStore?.currency || "NGN";
-  const symbol = currency === "NGN" ? "₦" : currency === "GHS" ? "₵" : currency;
+  const currency = currentStore?.currency || "GHS";
+  const symbol = currency === "GHS" ? "GH₵" : currency === "GHS" ? "₵" : currency;
 
   const load = useCallback(async () => {
     if (!currentStore) return;

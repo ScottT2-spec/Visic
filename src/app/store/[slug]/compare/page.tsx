@@ -20,8 +20,8 @@ interface CompareProduct {
   reviewCount?: number;
 }
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   return `${symbols[currency] || currency}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
 
@@ -50,7 +50,7 @@ export default function ComparePage() {
 
   const clearAll = useCallback(() => setProducts([]), []);
 
-  const currency = products[0]?.currency || "NGN";
+  const currency = products[0]?.currency || "GHS";
 
   const rows: Array<{ label: string; getValue: (p: CompareProduct) => React.ReactNode }> = [
     { label: "Price", getValue: (p) => <span className="font-semibold">{formatCurrency(p.price, currency)}</span> },

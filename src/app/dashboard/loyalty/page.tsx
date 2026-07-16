@@ -38,8 +38,8 @@ export default function LoyaltyPage() {
   const [showSettings, setShowSettings] = useState(false);
   const [saving, setSaving] = useState(false);
 
-  const currency = currentStore?.currency || "NGN";
-  const symbol = currency === "NGN" ? "₦" : currency === "GHS" ? "₵" : currency;
+  const currency = currentStore?.currency || "GHS";
+  const symbol = currency === "GHS" ? "GH₵" : currency === "GHS" ? "₵" : currency;
 
   const [form, setForm] = useState({
     enabled: true, pointsPerCurrency: 1, currencyPerPoint: 100,

@@ -141,7 +141,7 @@ You are a hands-on business partner. You don't just give advice — you take act
 ## CONVERSATION STYLE
 - Be warm, direct, and action-oriented
 - Use the store's currency (${storeContext.includes("Currency:") ? "" : "check context"})
-- Reference African market context (Nigeria, Ghana, Kenya, etc.)
+- Reference African market context (Ghana, Kenya, Nigeria, etc.)
 - Give specific, actionable advice — not generic platitudes
 - When generating descriptions/copy, make them conversion-focused and mobile-optimized
 - Never use placeholder brackets [like this] — write real content
@@ -197,7 +197,7 @@ export async function mcpChat(req: MCPChatRequest): Promise<MCPAIResponse> {
 Slug: ${store.slug}
 Business type: ${store.businessType || "general"}
 Country: ${store.country || "NG"}
-Currency: ${store.currency || "NGN"}
+Currency: ${store.currency || "GHS"}
 Plan: ${store.workspace.plan}
 Products: ${store._count.products}
 Orders: ${store._count.orders}
@@ -227,7 +227,7 @@ Customers: ${store._count.customers}`;
   const mcpContext: MCPContext = {
     siteId: req.siteId,
     userId: req.userId,
-    currency: store.currency || "NGN",
+    currency: store.currency || "GHS",
     country: store.country || "NG",
     storeName: store.name,
     storeSlug: store.slug,

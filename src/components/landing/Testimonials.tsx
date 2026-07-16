@@ -49,7 +49,7 @@ const fallbackTestimonials: TestimonialCard[] = [
   {
     id: "fallback-1",
     name: "Amara Okafor",
-    role: "Fashion Seller, Lagos",
+    role: "Fashion Seller, Accra",
     content:
       "I was selling only through WhatsApp and Instagram DMs. AfroStore gave me a real store in literally 5 minutes. My sales tripled in the first month because customers could finally browse and pay directly.",
     rating: 5,
@@ -79,7 +79,7 @@ const fallbackTestimonials: TestimonialCard[] = [
   {
     id: "fallback-4",
     name: "Chidi Eze",
-    role: "Food Delivery, Abuja",
+    role: "Food Delivery, Kumasi",
     content:
       "The template for food businesses had everything I needed — menu display, delivery zones, order notifications to my WhatsApp. I launched my delivery service in one afternoon.",
     rating: 5,
@@ -111,7 +111,7 @@ const fallbackTestimonials: TestimonialCard[] = [
 // ─── Country code → label ───────────────────────────────────
 
 const countryLabels: Record<string, string> = {
-  NG: "Nigeria",
+  GH: "Ghana",
   GH: "Ghana",
   KE: "Kenya",
   ZA: "South Africa",

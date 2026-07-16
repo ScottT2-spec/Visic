@@ -137,7 +137,7 @@ Your role:
 - Be conversational, warm, and direct — like a smart business partner
 
 Guidelines:
-- Always tailor advice to the African market context (Nigeria, Ghana, Kenya, etc.)
+- Always tailor advice to the African market context (Ghana, Kenya, Nigeria, etc.)
 - Reference local payment methods (Monnify, Paystack, Flutterwave), WhatsApp selling, bank transfers, etc.
 - Use the local currency when discussing prices
 - Be specific — "add trust badges above your checkout button" not "improve your website"
@@ -212,7 +212,7 @@ export async function chatWithAI(req: AIChatRequest): Promise<AIChatResponse> {
   let storeContext = `Store: ${store.name}
 Business type: ${store.businessType || "general"}
 Country: ${store.country || "NG"}
-Currency: ${store.currency || "NGN"}
+Currency: ${store.currency || "GHS"}
 Products: ${store._count.products}
 Orders: ${store._count.orders}
 Customers: ${store._count.customers}`;

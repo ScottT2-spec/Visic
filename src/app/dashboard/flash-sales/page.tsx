@@ -41,8 +41,8 @@ export default function FlashSalesPage() {
     startsAt: "", endsAt: "", maxUses: "", productIds: [] as string[],
   });
 
-  const currency = currentStore?.currency || "NGN";
-  const symbol = currency === "NGN" ? "₦" : currency === "GHS" ? "₵" : currency;
+  const currency = currentStore?.currency || "GHS";
+  const symbol = currency === "GHS" ? "GH₵" : currency === "GHS" ? "₵" : currency;
 
   const load = useCallback(async () => {
     if (!currentStore) return;

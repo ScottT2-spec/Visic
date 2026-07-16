@@ -175,7 +175,7 @@ export default function ProductForm({ productId }: ProductFormProps) {
   // Categories
   const [categories, setCategories] = useState<Category[]>([]);
 
-  const currency = currentStore?.currency || "NGN";
+  const currency = currentStore?.currency || "GHS";
 
   // ─── Load categories ───────────────────────────────────────
 

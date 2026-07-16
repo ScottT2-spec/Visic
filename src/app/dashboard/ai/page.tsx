@@ -70,7 +70,7 @@ const suggestions = [
   { text: "Show me my dashboard overview", icon: "📊" },
   { text: "Add a new product to my store", icon: "📦" },
   { text: "Create a 20% off coupon", icon: "🎟️" },
-  { text: "Set up delivery zones for Lagos", icon: "🚚" },
+  { text: "Set up delivery zones for Accra", icon: "🚚" },
   { text: "Start a flash sale this weekend", icon: "⚡" },
   { text: "How are my sales doing this month?", icon: "📈" },
   { text: "Show me pending orders", icon: "🛒" },

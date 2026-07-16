@@ -70,8 +70,8 @@ interface StoreData {
 
 /* ───────── Helpers ───────── */
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
@@ -278,7 +278,7 @@ export default function ShopPage() {
 
   const hasFilters = selectedCategory || searchQuery;
   const sortedProducts = sortProducts(products, sort);
-  const currency = storeData?.store.currency || "NGN";
+  const currency = storeData?.store.currency || "GHS";
 
   const navPageOrder: Record<string, number> = { ABOUT: 0, FAQ: 1, CONTACT: 2, POLICY: 3, CUSTOM: 4, LANDING: 5 };
   const navPages = (storeData?.pages || [])

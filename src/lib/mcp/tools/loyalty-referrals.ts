@@ -76,7 +76,7 @@ const getLoyaltyProgram: MCPToolDef = {
 const setupLoyaltyProgram: MCPToolDef = {
   name: "setup_loyalty_program",
   description: `Create or update the loyalty program. Before calling, ask:
-- Points earning rate (e.g., 1 point per ₦100 spent)
+- Points earning rate (e.g., 1 point per GH₵100 spent)
 - Point redemption value
 - Minimum points to redeem
 - Welcome bonus points

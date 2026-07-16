@@ -46,10 +46,10 @@ export function extractKeyTerms(text: string): string[] {
   return [...new Set(filtered)];
 }
 
-/** Format currency for search (handle ₦, GHS, KES, etc.) */
+/** Format currency for search (handle GH₵, GHS, KES, etc.) */
 export function normalizeCurrency(text: string): string {
   return text
-    .replace(/₦/g, 'NGN ')
+    .replace(/GH₵/g, 'GHS ')
     .replace(/GH₵/g, 'GHS ')
     .replace(/KSh/g, 'KES ')
     .replace(/R\s/g, 'ZAR ')

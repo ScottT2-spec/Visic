@@ -36,7 +36,7 @@ const SiteContext = createContext<SiteContextType>({
   siteName: null,
   siteType: null,
   slug: null,
-  currency: 'NGN',
+  currency: 'GHS',
   setSiteId: () => {},
   loading: true,
   currentStore: null,
@@ -51,7 +51,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
   const [siteType, setSiteType] = useState<SiteContextType['siteType']>(null);
   const [slug, setSlug] = useState<string | null>(null);
   const [subdomain, setSubdomain] = useState<string | null>(null);
-  const [currency, setCurrency] = useState('NGN');
+  const [currency, setCurrency] = useState('GHS');
   const [loading, setLoading] = useState(true);
   const [siteData, setSiteData] = useState<Record<string, unknown> | null>(null);
   const [storesList, setStoresList] = useState<StoreLike[]>([]);
@@ -90,7 +90,7 @@ export function SiteProvider({ children }: { children: ReactNode }) {
         setSiteType(site.siteType);
         setSlug(site.slug);
         setSubdomain(site.subdomain || site.slug);
-        setCurrency(site.currency || 'NGN');
+        setCurrency(site.currency || 'GHS');
         setSiteData(site);
       } else {
         resetSiteState();

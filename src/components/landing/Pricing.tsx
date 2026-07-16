@@ -7,7 +7,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Free",
-    price: "₦0",
+    price: "GH₵0",
     period: "forever",
     description: "Perfect for trying things out",
     features: [
@@ -24,7 +24,7 @@ const plans = [
   },
   {
     name: "Starter",
-    price: "₦5,000",
+    price: "GH₵5,000",
     period: "/month",
     description: "For businesses ready to sell",
     features: [
@@ -44,7 +44,7 @@ const plans = [
   },
   {
     name: "Business",
-    price: "₦15,000",
+    price: "GH₵15,000",
     period: "/month",
     description: "Everything you need to grow",
     features: [
@@ -66,7 +66,7 @@ const plans = [
   },
   {
     name: "Growth",
-    price: "₦35,000",
+    price: "GH₵35,000",
     period: "/month",
     description: "AI-powered growth engine",
     features: [

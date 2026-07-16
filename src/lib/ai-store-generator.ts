@@ -133,8 +133,8 @@ function block(type: BlockType, props: Record<string, unknown>): BuilderBlock {
 // ─── Prompt ─────────────────────────────────────────────────
 
 function buildGenerationPrompt(input: StoreGeneratorInput): string {
-  const currency = input.currency || "NGN";
-  const country = input.country || "Nigeria";
+  const currency = input.currency || "GHS";
+  const country = input.country || "Ghana";
 
   return `You are a professional ecommerce website content writer for African businesses.
 
@@ -206,9 +206,9 @@ Return ONLY valid JSON with this exact structure:
 }
 
 Rules:
-- Use real-sounding Nigerian/African names for testimonials
+- Use real-sounding Ghanaian/African names for testimonials
 - Make FAQ answers specific to ${input.businessType} businesses
-- Shipping policy should mention Lagos, Abuja, and nationwide delivery
+- Shipping policy should mention Accra, Kumasi, and nationwide delivery
 - Payment section should reference bank transfer, card payment, and pay-on-delivery
 - Keep tone warm, confident, and trustworthy
 - NO placeholder brackets like [Your Name] — write real content
@@ -526,7 +526,7 @@ function buildContactPage(data: Record<string, any>, storeName: string): Generat
         { icon: "mail", title: "Email", value: "hello@example.com" },
         { icon: "phone", title: "Phone", value: "+234 800 000 0000" },
         { icon: "message", title: "WhatsApp", value: "Quick chat support" },
-        { icon: "map-pin", title: "Address", value: "Lagos, Nigeria" },
+        { icon: "map-pin", title: "Address", value: "Accra, Ghana" },
       ],
       hours: "Monday - Saturday, 9:00 AM - 6:00 PM",
     }),
@@ -578,7 +578,7 @@ function buildPoliciesPage(data: Record<string, any>, storeName: string): Genera
     }),
     block("spacer", { height: 8 }),
     block("text", {
-      text: policies.shipping || "We deliver nationwide. Orders within Lagos are delivered in 1-2 business days. Other states take 3-5 business days.",
+      text: policies.shipping || "We deliver nationwide. Orders within Accra are delivered in 1-2 business days. Other states take 3-5 business days.",
       align: "left",
       color: "#525252",
       fontSize: "base",

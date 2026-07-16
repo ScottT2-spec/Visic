@@ -7,10 +7,10 @@ export function cn(...inputs: ClassValue[]) {
 
 export function formatCurrency(
   amount: number,
-  currency: string = "NGN"
+  currency: string = "GHS"
 ): string {
   const symbols: Record<string, string> = {
-    NGN: "₦",
+    GHS: "GH₵",
     KES: "KSh",
     GHS: "GH₵",
     ZAR: "R",

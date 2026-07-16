@@ -133,7 +133,7 @@ export const blockDefaults: Record<BlockType, () => Record<string, unknown>> = {
     items: [
       { question: "How do I place an order?", answer: "Simply browse our products, add to cart, and checkout." },
       { question: "What payment methods do you accept?", answer: "We accept card payments, bank transfers, and mobile money." },
-      { question: "How long does delivery take?", answer: "Delivery typically takes 24-48 hours within Lagos." },
+      { question: "How long does delivery take?", answer: "Delivery typically takes 24-48 hours within Accra." },
     ],
   }),
   contactForm: () => ({
@@ -208,7 +208,7 @@ export const blockDefaults: Record<BlockType, () => Record<string, unknown>> = {
     items: [
       { icon: "mail", title: "Email", value: "hello@store.com" },
       { icon: "phone", title: "Phone", value: "+234 800 000 0000" },
-      { icon: "map-pin", title: "Address", value: "Lagos, Nigeria" },
+      { icon: "map-pin", title: "Address", value: "Accra, Ghana" },
       { icon: "message", title: "WhatsApp", value: "+234 800 000 0000" },
     ],
     hours: "Monday - Saturday, 9:00 AM - 6:00 PM",

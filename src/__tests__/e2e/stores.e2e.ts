@@ -22,17 +22,17 @@ export function storeTests() {
 
     it('should create a store with valid data', async () => {
       const res = await POST('/api/sites', {
-        name: 'Lagos Fashion Hub',
+        name: 'Accra Fashion Hub',
         description: 'Premium ankara and fashion',
         businessType: 'fashion',
-        currency: 'NGN',
-        country: 'NG',
+        currency: 'GHS',
+        country: 'GH',
       }, user.token);
 
       expectSuccess(res, 201);
       const store = res.body.data as any;
       if (!store.id) throw new Error('Missing store id');
-      if (store.name !== 'Lagos Fashion Hub') throw new Error('Name mismatch');
+      if (store.name !== 'Accra Fashion Hub') throw new Error('Name mismatch');
       if (!store.subdomain) throw new Error('Missing subdomain');
       if (!store.settings) throw new Error('Missing default settings');
     });

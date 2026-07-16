@@ -193,7 +193,7 @@ export class BM25Search {
   /** Sanitize a word for tsquery (prevent injection) */
   private sanitizeTsWord(word: string): string {
     return word
-      .replace(/[^a-zA-Z0-9_₦\-]/g, '')
+      .replace(/[^a-zA-Z0-9_GH₵\-]/g, '')
       .replace(/-+/g, '-')
       .trim();
   }

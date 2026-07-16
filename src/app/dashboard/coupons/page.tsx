@@ -37,7 +37,7 @@ export default function CouponsPage() {
     minOrderAmount: "", maxUses: "", expiresAt: "", isActive: true,
   });
 
-  const currency = currentStore?.currency || "NGN";
+  const currency = currentStore?.currency || "GHS";
 
   const fetchCoupons = useCallback(async () => {
     if (!currentStore) return;

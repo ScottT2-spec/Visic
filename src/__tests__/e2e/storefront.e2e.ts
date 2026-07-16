@@ -168,8 +168,8 @@ export function storefrontTests() {
         deliveryAddress: {
           line1: '5 Allen Avenue',
           city: 'Ikeja',
-          state: 'Lagos',
-          country: 'Nigeria',
+          state: 'Accra',
+          country: 'Ghana',
         },
         paymentMethod: 'bank_transfer',
       });

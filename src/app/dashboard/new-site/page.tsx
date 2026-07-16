@@ -507,7 +507,7 @@ export default function NewSitePage() {
                   value={businessInfo.location}
                   onChange={e => setBusinessInfo(prev => ({ ...prev, location: e.target.value }))}
                   className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-900 outline-none"
-                  placeholder="Lagos, Nigeria"
+                  placeholder="Accra, Ghana"
                 />
               </div>
 

@@ -402,8 +402,8 @@ function ColumnsBlock({ props }: { props: Record<string, unknown> }) {
 
 /* ── Product Grid ────────────────────────────────────────────── */
 
-function formatBlockCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatBlockCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
@@ -1339,7 +1339,7 @@ function StaticProductGridBlock({ props }: { props: Record<string, unknown> }) {
   const cols = (props.columns as number) || 3;
   const gridClass = { 2: "grid-cols-2", 3: "grid-cols-2 sm:grid-cols-3", 4: "grid-cols-2 sm:grid-cols-2 lg:grid-cols-4" }[Math.min(cols, 4) as 2 | 3 | 4] || "grid-cols-2 sm:grid-cols-3";
   const fmt = (amount: number, cur?: string) => {
-    const symbols: Record<string, string> = { USD: "$", GBP: "£", EUR: "€", NGN: "₦", KES: "KSh", ZAR: "R" };
+    const symbols: Record<string, string> = { USD: "$", GBP: "£", EUR: "€", GHS: "GH₵", KES: "KSh", ZAR: "R" };
     return `${symbols[cur || "USD"] || "$"}${amount.toFixed(2)}`;
   };
   return (
@@ -1612,7 +1612,7 @@ interface StoreContextData {
   addedToCart?: string | null;
 }
 
-const StoreContext = createContext<StoreContextData>({ slug: "", products: [], currency: "NGN" });
+const StoreContext = createContext<StoreContextData>({ slug: "", products: [], currency: "GHS" });
 const StoreSlugContext = createContext<string>("");
 
 /* ─── PUBLIC API ────────────────────────────────────────────── */
@@ -1663,8 +1663,8 @@ export function RenderBlocks({ blocks, storeSlug, products, currency, addToCart,
   const hasFashionBlocks = blocks.some((b) => b.type.startsWith("fashion"));
   const wrappedContent = storeSlug ? (
     <StoreSlugContext.Provider value={storeSlug}>
-      <StoreContext.Provider value={{ slug: storeSlug || "", products: products || [], currency: currency || "NGN", addToCart, isWishlisted, toggleWishlist, addedToCart }}>
-        <FashionStoreContext.Provider value={hasFashionBlocks ? { products: (products || []) as unknown as FashionStoreContextData["products"], blogs: [], currency: currency || "NGN", storeSlug: storeSlug || "" } : null as unknown as FashionStoreContextData}>
+      <StoreContext.Provider value={{ slug: storeSlug || "", products: products || [], currency: currency || "GHS", addToCart, isWishlisted, toggleWishlist, addedToCart }}>
+        <FashionStoreContext.Provider value={hasFashionBlocks ? { products: (products || []) as unknown as FashionStoreContextData["products"], blogs: [], currency: currency || "GHS", storeSlug: storeSlug || "" } : null as unknown as FashionStoreContextData}>
         <div className="relative">
           {isEditorMode && (
             <div className="pointer-events-none sticky top-0 z-30 border-b border-brand-200 bg-brand-50/95 px-4 py-2 text-[10px] font-mono text-brand-800 backdrop-blur">

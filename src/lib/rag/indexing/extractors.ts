@@ -5,7 +5,7 @@
  * optimized searchable text and structured metadata.
  *
  * The extractors understand African commerce context:
- * - Currency formatting (₦, GHS, KES)
+ * - Currency formatting (GH₵, GHS, KES)
  * - WhatsApp ordering patterns
  * - Delivery zone structures
  * - Local business terminology
@@ -78,7 +78,7 @@ function extractProduct(data: EntityData, siteId: string): ExtractedDocument {
   const variants = arr(data.variants);
   const price = num(data.price);
   const compareAtPrice = num(data.compareAtPrice);
-  const currency = str(data.currency) || 'NGN';
+  const currency = str(data.currency) || 'GHS';
   const sku = str(data.sku);
   const stock = num(data.stock);
   const images = arr(data.images);
@@ -134,7 +134,7 @@ function extractOrder(data: EntityData, siteId: string): ExtractedDocument {
   const paymentStatus = str(data.paymentStatus);
   const paymentMethod = str(data.paymentMethod);
   const total = num(data.total);
-  const currency = str(data.currency) || 'NGN';
+  const currency = str(data.currency) || 'GHS';
   const email = str(data.email);
   const phone = str(data.phone);
   const createdAt = str(data.createdAt);
@@ -190,7 +190,7 @@ function extractCustomer(data: EntityData, siteId: string): ExtractedDocument {
   const phone = str(data.phone);
   const totalOrders = num(data.totalOrders);
   const totalSpent = num(data.totalSpent);
-  const currency = str(data.currency) || 'NGN';
+  const currency = str(data.currency) || 'GHS';
   const tags = strArr(data.tags);
   const address = data.address as EntityData | null;
 
@@ -381,7 +381,7 @@ function extractCoupon(data: EntityData, siteId: string): ExtractedDocument {
       ? `${value}% off`
       : type === 'FREE_SHIPPING'
         ? 'Free shipping'
-        : `${formatPrice(value, 'NGN')} off`;
+        : `${formatPrice(value, 'GHS')} off`;
 
   return {
     title: `Coupon: ${code}`,
@@ -389,7 +389,7 @@ function extractCoupon(data: EntityData, siteId: string): ExtractedDocument {
       [
         `Coupon code: ${code}`,
         `Discount: ${discountText}`,
-        num(data.minOrderAmount) && `Minimum order: ${formatPrice(num(data.minOrderAmount), 'NGN')}`,
+        num(data.minOrderAmount) && `Minimum order: ${formatPrice(num(data.minOrderAmount), 'GHS')}`,
         num(data.maxUses) && `Max uses: ${num(data.maxUses)} (used: ${num(data.usedCount)})`,
         str(data.expiresAt) && `Expires: ${str(data.expiresAt)}`,
         bool(data.isActive) ? 'Status: Active' : 'Status: Inactive',
@@ -424,8 +424,8 @@ function extractDeliveryZone(data: EntityData, siteId: string): ExtractedDocumen
       [
         `Delivery zone: ${name}`,
         `Areas: ${areas.join(', ')}`,
-        `Fee: ${formatPrice(fee, 'NGN')}`,
-        freeAbove && `Free delivery above ${formatPrice(freeAbove, 'NGN')}`,
+        `Fee: ${formatPrice(fee, 'GHS')}`,
+        freeAbove && `Free delivery above ${formatPrice(freeAbove, 'GHS')}`,
         str(data.estimatedDays) && `Estimated delivery: ${str(data.estimatedDays)}`,
       ]
         .filter(Boolean)
@@ -484,11 +484,11 @@ function extractAnalyticsSummary(data: EntityData, siteId: string): ExtractedDoc
     content: normalizeText(
       [
         `Analytics summary for ${period}`,
-        num(data.totalRevenue) && `Total revenue: ${formatPrice(num(data.totalRevenue), str(data.currency) || 'NGN')}`,
+        num(data.totalRevenue) && `Total revenue: ${formatPrice(num(data.totalRevenue), str(data.currency) || 'GHS')}`,
         num(data.totalOrders) && `Total orders: ${num(data.totalOrders)}`,
         num(data.totalCustomers) && `Total customers: ${num(data.totalCustomers)}`,
         num(data.conversionRate) && `Conversion rate: ${(num(data.conversionRate) * 100).toFixed(1)}%`,
-        num(data.averageOrderValue) && `Average order value: ${formatPrice(num(data.averageOrderValue), str(data.currency) || 'NGN')}`,
+        num(data.averageOrderValue) && `Average order value: ${formatPrice(num(data.averageOrderValue), str(data.currency) || 'GHS')}`,
         str(data.topProduct) && `Top product: ${str(data.topProduct)}`,
         str(data.topSource) && `Top traffic source: ${str(data.topSource)}`,
       ]
@@ -595,7 +595,7 @@ function strArr(v: unknown): string[] {
 
 function formatPrice(amount: number, currency: string): string {
   const symbols: Record<string, string> = {
-    NGN: '₦',
+    GHS: 'GH₵',
     GHS: 'GH₵',
     KES: 'KSh',
     ZAR: 'R',

@@ -62,7 +62,7 @@ const features = [
     icon: Truck,
     title: "Local Delivery Zones",
     description:
-      "Set area-based delivery fees — Lagos mainland vs island, Accra zones, Nairobi areas. Integrates with dispatch riders.",
+      "Set area-based delivery fees — Accra mainland vs island, Accra zones, Nairobi areas. Integrates with dispatch riders.",
     color: "brand",
   },
   {

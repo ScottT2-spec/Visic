@@ -32,7 +32,7 @@ export default function DeliveryPage() {
   const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({ name: "", areas: "", fee: "", freeAbove: "", estimatedDays: "", isActive: true });
 
-  const currency = currentStore?.currency || "NGN";
+  const currency = currentStore?.currency || "GHS";
 
   const fetchZones = useCallback(async () => {
     if (!currentStore) return;
@@ -133,7 +133,7 @@ export default function DeliveryPage() {
         <div className="rounded-2xl border border-surface-200 bg-white p-5">
           <h3 className="text-sm font-bold text-surface-900 mb-3">{editingId ? "Edit Zone" : "New Delivery Zone"}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Zone name (e.g. Lagos Mainland)" className="input-field py-2.5" autoFocus />
+            <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Zone name (e.g. Accra Central)" className="input-field py-2.5" autoFocus />
             <input value={form.areas} onChange={(e) => setForm({ ...form, areas: e.target.value })} placeholder="Areas (comma-separated: Ikeja, Surulere, Yaba)" className="input-field py-2.5" />
             <div>
               <label className="block text-xs font-medium text-surface-500 mb-1">Delivery Fee</label>

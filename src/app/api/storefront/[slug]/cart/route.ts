@@ -80,7 +80,7 @@ export async function POST(req: NextRequest, { params }: Params) {
       success: true,
       data: {
         items: validatedItems, errors: errors.length > 0 ? errors : undefined,
-        summary: { subtotal, taxRate, taxAmount, total, currency: site.currency || "NGN", itemCount: validatedItems.reduce((s, i) => s + i.quantity, 0) },
+        summary: { subtotal, taxRate, taxAmount, total, currency: site.currency || "GHS", itemCount: validatedItems.reduce((s, i) => s + i.quantity, 0) },
       },
     });
   } catch (err) { console.error("Cart validation error:", err); return NextResponse.json({ success: false, error: "Internal server error" }, { status: 500 }); }

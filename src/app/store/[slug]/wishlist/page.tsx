@@ -32,9 +32,9 @@ interface StoreInfo {
   currency: string;
 }
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
+function formatCurrency(amount: number, currency: string = "GHS"): string {
   const symbols: Record<string, string> = {
-    NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€",
+    GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€",
   };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
@@ -217,7 +217,7 @@ export default function WishlistPage() {
                     )
                   : 0;
               const justAdded = addedToCart === product.id;
-              const currency = product.currency || store?.currency || "NGN";
+              const currency = product.currency || store?.currency || "GHS";
 
               return (
                 <div key={product.id} className="group relative rounded-2xl border border-surface-100 overflow-hidden hover:shadow-lg transition-all">

@@ -69,7 +69,7 @@ export async function POST(req: NextRequest, { params }: Params) {
     // Update existing cart
     const updated = await prisma.abandonedCart.update({
       where: { id: existing.id },
-      data: { items, totalAmount: totalAmount || 0, currency: currency || "NGN" },
+      data: { items, totalAmount: totalAmount || 0, currency: currency || "GHS" },
     });
     return success(updated);
   }
@@ -83,7 +83,7 @@ export async function POST(req: NextRequest, { params }: Params) {
       sessionId,
       items,
       totalAmount: totalAmount || 0,
-      currency: currency || "NGN",
+      currency: currency || "GHS",
     },
   });
 

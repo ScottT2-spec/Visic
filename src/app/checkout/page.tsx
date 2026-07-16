@@ -43,8 +43,8 @@ interface DeliveryZone {
 
 /* ───────── Helpers ───────── */
 
-function formatCurrency(amount: number, currency: string = "NGN"): string {
-  const symbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+function formatCurrency(amount: number, currency: string = "GHS"): string {
+  const symbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
   const symbol = symbols[currency] || currency;
   return `${symbol}${amount.toLocaleString("en-NG", { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
 }
@@ -389,7 +389,7 @@ export default function CheckoutPage() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-surface-700 mb-1.5">State *</label>
-                    <input type="text" className="input-field" placeholder="Lagos" value={state} onChange={(e) => setState(e.target.value)} required />
+                    <input type="text" className="input-field" placeholder="Accra" value={state} onChange={(e) => setState(e.target.value)} required />
                   </div>
                 </div>
                 <div>

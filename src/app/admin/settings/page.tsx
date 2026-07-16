@@ -139,7 +139,7 @@ export default function AdminSettingsPage() {
               <div>
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Default Currency</label>
                 <select value={settings.defaultCurrency} onChange={(e) => update("defaultCurrency", e.target.value)} className="w-full rounded-xl border border-surface-200 px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
-                  <option value="NGN">NGN — Nigerian Naira</option>
+                  <option value="GHS">GHS — Ghana Cedi</option>
                   <option value="KES">KES — Kenyan Shilling</option>
                   <option value="GHS">GHS — Ghanaian Cedi</option>
                   <option value="ZAR">ZAR — South African Rand</option>
@@ -149,7 +149,7 @@ export default function AdminSettingsPage() {
               <div>
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Default Country</label>
                 <select value={settings.defaultCountry} onChange={(e) => update("defaultCountry", e.target.value)} className="w-full rounded-xl border border-surface-200 px-4 py-2.5 text-sm focus:outline-none focus:border-brand-500">
-                  <option value="NG">Nigeria</option>
+                  <option value="GH">Nigeria</option>
                   <option value="KE">Kenya</option>
                   <option value="GH">Ghana</option>
                   <option value="ZA">South Africa</option>

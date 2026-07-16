@@ -5,10 +5,10 @@ import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import { useSite } from "@/context/StoreContext";
 
 const plans = [
-  { name: "Free", price: "₦0", period: "/month", features: ["Subdomain", "5 products", "Basic analytics", "Platform branding"], icon: Zap },
-  { name: "Starter", price: "₦5,000", period: "/month", features: ["Custom domain", "50 products", "Payment gateways", "No branding"], icon: Star, popular: true },
-  { name: "Business", price: "₦15,000", period: "/month", features: ["Unlimited products", "Advanced analytics", "Coupons", "Abandoned cart"], icon: Crown },
-  { name: "Growth", price: "₦35,000", period: "/month", features: ["Everything in Business", "AI tools", "A/B testing", "Priority support"], icon: Crown },
+  { name: "Free", price: "GH₵0", period: "/month", features: ["Subdomain", "5 products", "Basic analytics", "Platform branding"], icon: Zap },
+  { name: "Starter", price: "GH₵5,000", period: "/month", features: ["Custom domain", "50 products", "Payment gateways", "No branding"], icon: Star, popular: true },
+  { name: "Business", price: "GH₵15,000", period: "/month", features: ["Unlimited products", "Advanced analytics", "Coupons", "Abandoned cart"], icon: Crown },
+  { name: "Growth", price: "GH₵35,000", period: "/month", features: ["Everything in Business", "AI tools", "A/B testing", "Priority support"], icon: Crown },
 ];
 
 export default function BillingPage() {

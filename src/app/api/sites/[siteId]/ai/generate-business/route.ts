@@ -32,7 +32,7 @@ export async function POST(req: NextRequest, { params }: Params) {
     // 1. Generate pages
     const storeResult = await generateStore({
       siteId, storeSlug: site.slug, storeName: businessName,
-      businessType, description, country: location, currency: site.currency || "NGN",
+      businessType, description, country: location, currency: site.currency || "GHS",
     });
     results.pages = storeResult.pages;
 

@@ -29,7 +29,7 @@ export async function POST(req: NextRequest, { params }: Params) {
   // Check they have enough approved earnings
   const approvedUnpaid = affiliate.totalEarnings - affiliate.paidEarnings;
   if (amount > approvedUnpaid) {
-    return error(`Amount exceeds available balance (₦${approvedUnpaid.toLocaleString()})`, 400);
+    return error(`Amount exceeds available balance (GH₵${approvedUnpaid.toLocaleString()})`, 400);
   }
 
   const payout = await prisma.payout.create({

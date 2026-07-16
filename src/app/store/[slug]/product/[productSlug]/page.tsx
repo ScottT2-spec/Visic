@@ -29,7 +29,7 @@ interface ProductData {
 }
 
 function formatPrice(amount: number, currency: string) {
-  const symbols: Record<string, string> = { NGN: "₦", GHS: "₵", KES: "KSh", USD: "$", GBP: "£", EUR: "€" };
+  const symbols: Record<string, string> = { GHS: "GH₵", GHS: "₵", KES: "KSh", USD: "$", GBP: "£", EUR: "€" };
   return `${symbols[currency] || currency + " "}${Number(amount).toLocaleString()}`;
 }
 

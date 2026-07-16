@@ -28,7 +28,7 @@ export async function POST(req: NextRequest, { params }: Params) {
       businessType: (body.businessType as string) || site.businessType || "general",
       description: (body.description as string) || site.description || undefined,
       country: site.country || "NG",
-      currency: site.currency || "NGN",
+      currency: site.currency || "GHS",
     });
 
     return success({

@@ -142,7 +142,7 @@ export async function POST(req: NextRequest, { params }: Params) {
         }
         const minAmount = coupon.minOrderAmount ? Number(coupon.minOrderAmount) : null;
         if (minAmount && subtotal < minAmount) {
-          return error(`Minimum order amount is ₦${minAmount}`, 400);
+          return error(`Minimum order amount is GH₵${minAmount}`, 400);
         }
 
         const couponValue = Number(coupon.value);

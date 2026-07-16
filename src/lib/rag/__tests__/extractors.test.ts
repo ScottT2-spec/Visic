@@ -16,7 +16,7 @@ describe('Document Extractors', () => {
         description: 'Beautiful handwoven Ankara fabric, 6 yards',
         price: 15000,
         compareAtPrice: 20000,
-        currency: 'NGN',
+        currency: 'GHS',
         category: 'Fabrics',
         stock: 25,
         status: 'active',
@@ -31,7 +31,7 @@ describe('Document Extractors', () => {
 
       expect(result.title).toBe('Premium Ankara Fabric');
       expect(result.content).toContain('Premium Ankara Fabric');
-      expect(result.content).toContain('₦15,000');
+      expect(result.content).toContain('GH₵15,000');
       expect(result.content).toContain('25% off');
       expect(result.content).toContain('ankara, fabric, fashion');
       expect(result.content).toContain('SKU: ANK-001');
@@ -63,7 +63,7 @@ describe('Document Extractors', () => {
         paymentStatus: 'paid',
         paymentMethod: 'paystack',
         total: 45000,
-        currency: 'NGN',
+        currency: 'GHS',
         createdAt: '2024-01-15',
         items: [
           { name: 'Ankara Fabric', quantity: 2, price: 15000 },
@@ -74,7 +74,7 @@ describe('Document Extractors', () => {
       const result = extractDocument(DocumentType.ORDER, order, STORE_ID);
 
       expect(result.title).toBe('Order #AF-10042');
-      expect(result.content).toContain('₦45,000');
+      expect(result.content).toContain('GH₵45,000');
       expect(result.content).toContain('delivered');
       expect(result.content).toContain('paid');
       expect(result.content).toContain('Ankara Fabric x2');
@@ -92,7 +92,7 @@ describe('Document Extractors', () => {
         totalOrders: 12,
         totalSpent: 350000,
         tags: ['vip', 'repeat-buyer'],
-        address: { city: 'Lagos', state: 'Lagos', country: 'NG' },
+        address: { city: 'Accra', state: 'Accra', country: 'GH' },
       };
 
       const result = extractDocument(DocumentType.CUSTOMER, customer, STORE_ID);
@@ -100,9 +100,9 @@ describe('Document Extractors', () => {
       expect(result.title).toBe('Amara Okafor');
       expect(result.content).toContain('amara@example.com');
       expect(result.content).toContain('12');
-      expect(result.content).toContain('₦350,000');
+      expect(result.content).toContain('GH₵350,000');
       expect(result.content).toContain('vip, repeat-buyer');
-      expect(result.content).toContain('Lagos');
+      expect(result.content).toContain('Accra');
     });
   });
 
@@ -130,7 +130,7 @@ describe('Document Extractors', () => {
     it('extracts delivery zone with pricing', () => {
       const zone = {
         id: 'dz_1',
-        name: 'Lagos Mainland',
+        name: 'Accra Central',
         areas: ['Yaba', 'Surulere', 'Ikeja', 'Mushin'],
         fee: 2000,
         freeAbove: 50000,
@@ -139,10 +139,10 @@ describe('Document Extractors', () => {
 
       const result = extractDocument(DocumentType.DELIVERY_ZONE, zone, STORE_ID);
 
-      expect(result.content).toContain('Lagos Mainland');
+      expect(result.content).toContain('Accra Central');
       expect(result.content).toContain('Yaba');
-      expect(result.content).toContain('₦2,000');
-      expect(result.content).toContain('₦50,000');
+      expect(result.content).toContain('GH₵2,000');
+      expect(result.content).toContain('GH₵50,000');
       expect(result.content).toContain('1-2 days');
     });
   });

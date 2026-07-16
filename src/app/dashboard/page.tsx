@@ -94,7 +94,7 @@ export default function DashboardPage() {
   const stats = data?.stats;
   const recentOrders = data?.recentOrders || [];
   const topProducts = data?.topProducts || [];
-  const currency = currentStore.currency || "NGN";
+  const currency = currentStore.currency || "GHS";
 
   const statCards = [
     {

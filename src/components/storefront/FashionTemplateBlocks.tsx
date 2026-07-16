@@ -479,7 +479,7 @@ export function FashionProductGrid({ products: propProducts, columns = 4, showCa
     // If filtering returned no results, fall back to placeholder products
     if (storeProducts.length === 0) return propProducts || [];
 
-    const currencySymbols: Record<string, string> = { NGN: "₦", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
+    const currencySymbols: Record<string, string> = { GHS: "GH₵", KES: "KSh", GHS: "GH₵", ZAR: "R", USD: "$", GBP: "£", EUR: "€" };
     const sym = currencySymbols[storeCtx.currency] || storeCtx.currency;
 
     return storeProducts.slice(0, maxProducts).map(p => ({

@@ -264,7 +264,7 @@ export default function BuilderPreviewPage() {
   const renderProductGrid = () => {
     if (templateSlug !== 'cosmetics' || pageSlug !== 'shop' || !productData) return null;
     const products = productData.products || [];
-    const currency = store.currency || 'NGN';
+    const currency = store.currency || 'GHS';
     
     return (
       <div className="max-w-[1222px] mx-auto px-4 pb-16">
@@ -289,8 +289,8 @@ export default function BuilderPreviewPage() {
                 </Link>
                 {p.category && <p className="text-[10px] text-[#767676] mt-0.5">{p.category.name}</p>}
                 <div className="flex items-center gap-2 mt-1.5">
-                  <span className="text-base font-bold text-[#242424]">₦{Number(p.price).toLocaleString()}</span>
-                  {p.compareAtPrice && <span className="text-xs text-[#767676] line-through">₦{Number(p.compareAtPrice).toLocaleString()}</span>}
+                  <span className="text-base font-bold text-[#242424]">GH₵{Number(p.price).toLocaleString()}</span>
+                  {p.compareAtPrice && <span className="text-xs text-[#767676] line-through">GH₵{Number(p.compareAtPrice).toLocaleString()}</span>}
                 </div>
               </div>
             );

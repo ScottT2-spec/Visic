@@ -99,7 +99,7 @@ export class PluginEngine {
       select: { name: true, currency: true, country: true },
     });
 
-    const storeCtx = store || { name: "Store", currency: "NGN", country: "NG" };
+    const storeCtx = store || { name: "Store", currency: "GHS", country: "GH" };
 
     // Execute each subscriber
     const results: PluginExecResult[] = [];
