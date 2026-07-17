@@ -14,6 +14,7 @@ import { AIFailover } from "@/lib/failover";
 import type { AIProviderConfig } from "@/lib/failover";
 import { AICapability } from "@/lib/failover";
 import type { BuilderBlock, BlockType } from "@/lib/builder/types";
+import { detectIndustry, getRandomIndustryImages } from "@/lib/ai-image-pools";
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -25,6 +26,15 @@ export interface StoreGeneratorInput {
   description?: string;
   country?: string;
   currency?: string;
+}
+
+/** Randomized image set for this store generation run */
+interface StoreImages {
+  hero: string;
+  about: string;
+  lifestyle: string;
+  showcase: string[];
+  banner: string;
 }
 
 export interface GeneratedPage {
@@ -228,7 +238,7 @@ function parseAIResponse(content: string): Record<string, any> {
 
 // ─── Build pages from AI content ────────────────────────────
 
-function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: string): GeneratedPage {
+function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: string, images: StoreImages): GeneratedPage {
   const brand = data.brand || {};
   const features = data.features || [];
   const testimonials = data.testimonials || [];
@@ -236,7 +246,7 @@ function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: 
   const featureIcons = ["truck", "shield", "headphones", "zap", "heart", "award", "globe", "rocket"];
 
   const blocks: BuilderBlock[] = [
-    // Premium Hero
+    // Premium Hero with industry-specific background
     block("hero", {
       heading: brand.heroHeading || `Welcome to ${storeName}`,
       subheading: brand.heroSubheading || brand.tagline || "Discover amazing products",
@@ -245,7 +255,8 @@ function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: 
       secondaryButtonText: "Learn More",
       secondaryButtonHref: `/store/${storeSlug}/about`,
       badge: brand.tagline || `✨ Welcome to ${storeName}`,
-      bgStyle: "gradient",
+      bgStyle: "image",
+      backgroundImage: images.hero,
       align: "center",
     }),
     block("spacer", { height: 56 }),
@@ -285,7 +296,7 @@ function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: 
             desc: f.desc,
           }))
         : [
-            { icon: "truck", title: "Fast Delivery", desc: "Swift delivery across Nigeria" },
+            { icon: "truck", title: "Fast Delivery", desc: "Swift delivery across Ghana" },
             { icon: "shield", title: "Secure Payments", desc: "Pay with card, bank transfer, or on delivery" },
             { icon: "headphones", title: "24/7 Support", desc: "Reach us anytime on WhatsApp" },
             { icon: "refresh", title: "Easy Returns", desc: "Hassle-free returns within 7 days" },
@@ -344,7 +355,7 @@ function buildHomePage(data: Record<string, any>, storeName: string, storeSlug: 
   };
 }
 
-function buildAboutPage(data: Record<string, any>, storeName: string, storeSlug: string): GeneratedPage {
+function buildAboutPage(data: Record<string, any>, storeName: string, storeSlug: string, images: StoreImages): GeneratedPage {
   const about = data.about || {};
   const testimonials = data.testimonials || [];
   const valueIcons = ["heart", "award", "globe", "shield", "target", "rocket"];
@@ -364,24 +375,28 @@ function buildAboutPage(data: Record<string, any>, storeName: string, storeSlug:
     }),
     block("spacer", { height: 56 }),
 
-    // Story section 1
+    // Story section 1 with industry image
     block("imageText", {
       badge: "Our Story",
       title: `Why ${storeName}?`,
       text: firstHalf,
+      image: images.about,
+      imageAlt: `${storeName} - Our Story`,
       reverse: false,
       buttonText: "",
     }),
     block("spacer", { height: 48 }),
   ];
 
-  // Story section 2
+  // Story section 2 with lifestyle image
   if (secondHalf) {
     blocks.push(
       block("imageText", {
         badge: "Our Mission",
         title: "What Drives Us",
         text: secondHalf,
+        image: images.lifestyle,
+        imageAlt: `${storeName} - Our Mission`,
         reverse: true,
         buttonText: "",
       })
@@ -438,7 +453,7 @@ function buildAboutPage(data: Record<string, any>, storeName: string, storeSlug:
     blocks.push(block("spacer", { height: 48 }));
   }
 
-  // CTA Banner
+  // CTA Banner with industry image
   blocks.push(
     block("banner", {
       title: "Ready to Experience the Difference?",
@@ -446,6 +461,7 @@ function buildAboutPage(data: Record<string, any>, storeName: string, storeSlug:
       buttonText: "Browse Products",
       buttonHref: `/store/${storeSlug}/shop`,
       bgColor: "dark",
+      backgroundImage: images.banner,
     })
   );
 
@@ -679,10 +695,14 @@ export async function generateStore(input: StoreGeneratorInput): Promise<StoreGe
     throw new Error("AI returned invalid content. Please try again.");
   }
 
-  // 3. Build pages from the generated content
+  // 3. Detect industry and get randomized images
+  const industry = detectIndustry(input.businessType, input.description);
+  const images = getRandomIndustryImages(industry);
+
+  // 4. Build pages from the generated content with industry-matched images
   const pages: GeneratedPage[] = [
-    buildHomePage(data, input.storeName, input.storeSlug),
-    buildAboutPage(data, input.storeName, input.storeSlug),
+    buildHomePage(data, input.storeName, input.storeSlug, images),
+    buildAboutPage(data, input.storeName, input.storeSlug, images),
     buildFAQPage(data, input.storeName, input.storeSlug),
     buildContactPage(data, input.storeName),
     buildPoliciesPage(data, input.storeName),
